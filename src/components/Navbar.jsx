@@ -1,4 +1,4 @@
-'use client';
+ 'use client';
 
 import React, { useState } from 'react';
 import logo from "@/assets/logo.png"
@@ -22,7 +22,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 bg-transparent">
+    <nav className="absolute top-0 left-0 w-full z-50 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -46,9 +46,10 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:text-gray-300 px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-200 hover:bg-white/10 rounded-md"
+                  className="text-black hover:text-white px-3 py-2 text-sm font-medium tracking-wide transition-all duration-300 relative group rounded-md hover:bg-gradient-to-br hover:from-[#c5f82a] hover:to-[#00d9a6] hover:-translate-y-1 hover:shadow-md"
                 >
                   {item.name}
+                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#c5f82a] to-[#00d9a6] group-hover:w-full transition-all duration-300"></div>
                 </Link>
               ))}
             </div>
@@ -58,7 +59,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-gradient-to-br hover:from-[#c5f82a] hover:to-[#00d9a6] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -101,15 +102,16 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 bg-black/80 backdrop-blur-md">
+        <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md border-t border-gray-200">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-white hover:text-gray-300 block px-3 py-2 text-base font-medium tracking-wide transition-colors duration-200 hover:bg-white/10 rounded-md"
+              className="text-black hover:text-blue-600 block px-3 py-2 text-base font-medium tracking-wide transition-all duration-300 relative group rounded-md hover:bg-gradient-to-br hover:from-[#c5f82a] hover:to-[#00d9a6] hover:-translate-y-1 hover:shadow-md border-2 border-transparent "
               onClick={() => setIsMenuOpen(false)}
             >
               {item.name}
+              <div className="absolute bottom-0 left-0 w-0 h-0.5  bg-gradient-to-r from-[#c5f82a] to-[#00d9a6] group-hover:w-full transition-all duration-300"></div>
             </Link>
           ))}
         </div>

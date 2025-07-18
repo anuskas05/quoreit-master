@@ -1,13 +1,17 @@
 // pages/find-job.jsx
+
+"use client";
+
+import Link from 'next/link';
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
  import Image from 'next/image';
 
 const FindJob = () => {
   return (
 
      <> 
-          <section className="relative h-96 flex items-center justify-center overflow-hidden">
+          <section className="relative h-96 flex items-center justify-center overflow-hidden mt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -94,12 +98,12 @@ const FindJob = () => {
       <p className="text-lg md:text-xl mb-6 max-w-4xl drop-shadow-md px-4">
         If you would like us to contact you with more information on what we do and what we can offer, please let us know.
       </p>
+ <Link href="/Contact-us">
+  <button className="cursor-pointer bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] font-semibold py-3 px-6 rounded transition-all duration-300 shadow-md">
+    CONTACT US
+  </button>
+</Link>
 
-      {/* <Link to="/contact"> */}
-        <button className="bg-green-300 hover: bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  font-semibold py-3 px-6 rounded transition-all duration-300 shadow-md">
-          CONTACT US
-        </button>
-      {/* </Link> */}
     </div>
   
     </>

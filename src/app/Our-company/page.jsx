@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const OurCompany = () => {
   return (
-    <section className="relative h-96 flex items-center justify-center overflow-hidden">
+    <section className="relative h-96 flex items-center justify-center overflow-hidden mt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image

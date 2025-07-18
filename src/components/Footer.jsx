@@ -1,19 +1,23 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/logo.png"; // Adjust if renamed
+import logo from "@/assets/logo1.jpg"; // Adjust if renamed
 
 export default function Footer() {
   return (
-    <footer className="bg-[#001f26] text-white dark:bg-gray-900 dark:text-gray-100">
+     <footer className="bg-[#001f26] text-white dark:bg-gray-900 dark:text-gray-100">
       <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-4 gap-10">
         {/* Logo */}
         <div>
-          <div className="bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] p-4 w-fit rounded">
-            <p className="font-bold text-lg leading-5 text-black">
-             QuoreIT
-            </p>
-          </div>
+          
+             <Image
+            src={logo}
+            alt="QuoreIt"
+            width={80}
+            height={80}
+            priority
+          />
+         
         </div>
 
         {/* Quick Links */}
@@ -78,17 +82,16 @@ export default function Footer() {
       </div>
 
       {/* Bottom */}
-      <div className="bg-gradient-to-r from-[#c5f82a] to-[#00d9a6] py-7 text-center">
+      <div className="bg-[#213c42] py-7 text-center">
         <div className="flex flex-col md:flex-row items-center justify-center gap-3">
           <Image
             src={logo}
             alt="QuoreIt"
             width={50}
-            height={50} 
-              className="h-16 w-auto md:h-20"
+            height={50}
             priority
           />
-          <p className="text-lg text-black font-medium">
+          <p className="text-lg text-[#00d9a6] font-medium">
             <Link href="#" className="underline hover:text-white">Powered</Link>{" "}
             <span>by</span>{" "}
             <Link href="#" className="underline hover:text-white">QuoreIT</Link>
@@ -96,5 +99,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+   
   );
 }
