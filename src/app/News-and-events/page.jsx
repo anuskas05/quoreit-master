@@ -10,7 +10,7 @@ const NewsEvent = () => {
     {
       id: 1,
       image: '/images/Card1.webp',
-      title: 'Egyptian HVN.TV – Beware of entity unlawfully trying to associate with us',
+      title: 'Egyptian HVN.TV – Beware of entity unlawfully trying  associate with us',
       link: 'https://www.harveynash.com/latest-news/egyptian-hvn-tv---a-scam-warning',
     },
     {
