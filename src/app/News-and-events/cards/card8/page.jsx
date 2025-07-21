@@ -1,12 +1,12 @@
- 'use client';
+'use client';
 
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const NewsEvent = () => {
+const card8 = () => {
   const cards = [
-    {
+         {
       id: 'card1',
       image: '/images/card1.webp',
       title: 'Egyptian HVN.TV – Beware of entity unlawfully trying associate with us',
@@ -42,24 +42,6 @@ const NewsEvent = () => {
       title: 'Harvey Nash appoints cyber expert as Global CISO',
       link: '/News-and-events/cards/card6',
     },
-    {
-      id: 'card7',
-      image: '/images/card7.webp',
-      title: 'Harvey Nash wins prestigious Best Company to Work for Award',
-      link: '/News-and-events/cards/card7',
-    },
-    {
-      id: 'card8',
-      image: '/images/card8.webp',
-      title: 'Global tech threatened as skills crisis reaches high',
-      link: '/News-and-events/cards/card8',
-    },
-    {
-      id: 'card9',
-      image: '/images/card9.webp',
-      title: 'National Coming Out Day',
-      link: '/News-and-events/cards/card9',
-    },
   ];
 
   const isExternal = (url) => url.startsWith('http');
@@ -85,25 +67,68 @@ const NewsEvent = () => {
         </div>
       </section>
 
-      <section className="py-10 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 px-4">
+     <main className="px-6 py-12 max-w-3xl mx-auto text-gray-800">
+  <h1 className="text-3xl md:text-4xl font-bold mb-6 text-red-800">
+    Growth in Global Tech Threatened by Skills Crisis
+  </h1>
+
+  <div className="mb-6">
+    <Image
+      src="/images/card8.webp"
+      alt="Skills Crisis Report"
+      width={800}
+      height={600}
+      className="rounded-lg shadow-lg w-full"
+    />
+  </div>
+
+  <p className="mb-4 text-lg leading-relaxed">
+    The seemingly unending growth in the global tech sector is under threat as massive skills shortages reach an all-time high. Companies worldwide are increasing technology investments (60% intent) and headcount (61%) to record levels, according to the world's largest and longest-running survey of senior technology decision-makers.
+  </p>
+
+  <ul className="list-disc pl-6 text-lg mb-6 leading-relaxed">
+    <li className="mb-2">
+      <span className="font-semibold">Crisis worsens</span> as workers reassess their priorities or leave for higher pay.
+    </li>
+    <li className="mb-2">
+      <span className="font-semibold">Cybersecurity shortage</span> reaches a record high—up nearly a quarter this year.
+    </li>
+    <li className="mb-2">
+      <span className="font-semibold">Women in tech</span> continue to rise at a snail’s pace.
+    </li>
+    <li className="mb-2">
+      <span className="font-semibold">Mental wellbeing</span> suffers—6 in 10 leaders report decline in their tech teams.
+    </li>
+    <li className="mb-2">
+      <span className="font-semibold">Climate opportunity</span> missed—companies are overlooking tech's role in reducing carbon footprint.
+    </li>
+  </ul>
+
+  <p className="mb-4 text-lg leading-relaxed">
+    The report, presented by Harvey Nash Group, CIONET, and MIT CISR, highlights the urgent need for organizations to rethink talent strategies, invest in upskilling, and address workforce wellbeing to remain competitive in an evolving digital world.
+  </p>
+</main>
+
+
+      <section className="py-10 px-4 bg-gray-100">
+        <div className="max-w-4xl mx-auto grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2">
           {cards.map((card) => {
             const external = isExternal(card.link);
             return (
               <div
                 key={card.id}
-                className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                className="bg-white w-full max-w-xs mx-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
                 <Image
                   src={card.image}
                   alt={card.title}
-                  width={500}
-                  height={300}
-                  className="w-full h-56 object-cover rounded-t-lg"
+                  width={320}
+                  height={200}
+                  className="w-full h-36 object-cover rounded-t-lg"
                   quality={100}
                 />
-                <div className="p-6 flex flex-col justify-between h-60">
-                  <h3 className="text-lg font-semibold text-blue-700 mb-4 hover:underline">
+                <div className="p-3 flex flex-col justify-between h-40">
+                  <h3 className="text-sm font-semibold text-blue-700 mb-2 hover:underline leading-snug">
                     {external ? (
                       <a href={card.link} target="_blank" rel="noopener noreferrer">
                         {card.title}
@@ -113,38 +138,15 @@ const NewsEvent = () => {
                     )}
                   </h3>
 
-                  {external ? (
-                    <a
-                      href={card.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cursor-pointer bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] font-semibold py-3 px-6 rounded transition-all duration-300 shadow-md text-center"
-                    >
-                      FIND OUT MORE
-                    </a>
-                  ) : (
-                    <Link href={card.link}>
-                      <button className="cursor-pointer bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] font-semibold py-3 px-6 rounded transition-all duration-300 shadow-md">
-                        FIND OUT MORE
-                      </button>
-                    </Link>
-                  )}
+                  
                 </div>
               </div>
             );
           })}
         </div>
       </section>
-
-      <div className="w-full flex justify-center mt-12 mb-24">
-        <Link href="#article-archive">
-          <button className="cursor-pointer bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] font-semibold py-3 px-6 rounded transition-all duration-300 shadow-md">
-            FULL ARTICLE ARCHIVE
-          </button>
-        </Link>
-      </div>
     </>
   );
 };
 
-export default NewsEvent;
+export default card8;

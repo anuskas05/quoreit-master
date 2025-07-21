@@ -8,17 +8,20 @@ export default function Footer() {
      <footer className="bg-[#001f26] text-white dark:bg-gray-900 dark:text-gray-100">
       <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-4 gap-10">
         {/* Logo */}
-        <div>
+        {/* <div>
           
-             <Image
+             {/* <Image
             src={logo}
             alt="QuoreIt"
             width={80}
             height={80}
             priority
-          />
+          /> */}
          
-        </div>
+        {/* </div> */} 
+        <div>
+  <h1 className="text-3xl font-bold text-white">QuoreIT</h1>
+</div>
 
         {/* Quick Links */}
         <div>
@@ -84,13 +87,16 @@ export default function Footer() {
       {/* Bottom */}
       <div className="bg-[#213c42] py-7 text-center">
         <div className="flex flex-col md:flex-row items-center justify-center gap-3">
-          <Image
+          {/* <Image
             src={logo}
             alt="QuoreIt"
             width={50}
             height={50}
             priority
-          />
+          /> */}
+          <div>
+  <h1 className="text-3xl font-bold text-white">QuoreIT</h1>
+</div>
           <p className="text-lg text-[#00d9a6] font-medium">
             <Link href="#" className="underline hover:text-white">Powered</Link>{" "}
             <span>by</span>{" "}
