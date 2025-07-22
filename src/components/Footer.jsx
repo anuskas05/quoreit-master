@@ -28,11 +28,11 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-300 dark:text-gray-400">
             {[
-              { label: "Find a job", path: "/jobs" },
-              { label: "Submit a vacancy", path: "/submit-vacancy" },
-              { label: "What we do", path: "/about" },
-              { label: "News & Events", path: "/news-events" },
-              { label: "Contact us", path: "/contact" },
+              { label: "Find a job", path: "/Find-tech-jobs" },
+              { label: "Submit a vacancy", path: "/Find-tech-talent" },
+              { label: "What we do", path: "/What-we-do" },
+              { label: "News & Events", path: "/News-and-events" },
+              { label: "Contact us", path: "/Contact-us" },
             ].map(({ label, path }, idx) => (
               <li key={idx}>
                 <Link
@@ -52,7 +52,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-300 dark:text-gray-400">
             {[
               { label: "Privacy Policy", path: "/privacy" },
-              { label: "Cookies & Legal", path: "/legal" },
+              { label: "Cookies & Legal", path: "/Policies/Cookies-Legal" },
               { label: "Modern Slavery Statement", path: "/slavery-statement" },
             ].map(({ label, path }, idx) => (
               <li key={idx}>

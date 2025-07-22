@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+ 
 const TechTalent = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [submitted, setSubmitted] = useState(false);
@@ -34,7 +35,8 @@ const TechTalent = () => {
   };
   return (
     <>
-    <section className="relative h-96 flex items-center justify-center overflow-hidden mt-20">
+    
+    <section className="relative h-96 flex items-center justify-center overflow-hidden mt-25">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
