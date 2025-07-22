@@ -51,9 +51,9 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Policies</h3>
           <ul className="space-y-2 text-gray-300 dark:text-gray-400">
             {[
-              { label: "Privacy Policy", path: "/privacy" },
+              { label: "Privacy Policy", path: "/Policies/Privacy-Policy" },
               { label: "Cookies & Legal", path: "/Policies/Cookies-Legal" },
-              { label: "Modern Slavery Statement", path: "/slavery-statement" },
+              { label: "Modern Slavery Statement", path: "/Policies/Modern-Slavery-Statement" },
             ].map(({ label, path }, idx) => (
               <li key={idx}>
                 <Link

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from "next/link";
 import Image from 'next/image';
 import { Menu, X, ChevronDown } from 'lucide-react';
-
+import logo from "@/assets/logo.png"
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isInsightsOpen, setIsInsightsOpen] = useState(false);
@@ -27,14 +27,14 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-22">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+             <div className="flex-shrink-0">
             <Link href="/" className="block">
               <Image
-                src="/images/nash_logo.png"
-                alt=" Nash Logo"
+                src={logo}
+                alt="Harvey Nash Logo"
                 width={320}
                 height={120}
                 className="h-16 w-auto md:h-20 hover:scale-105 transition-transform duration-300"
@@ -50,7 +50,7 @@ const Navbar = () => {
                 <a
                   key={index}
                   href={item.href}
-                  className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-black hover:text-[#00d9a6] px-3 py-2 text-lg font-medium transition-colors duration-200"
                 >
                   {item.label}
                 </a>
@@ -60,7 +60,7 @@ const Navbar = () => {
               <div className="relative">
                 <button
                   onClick={toggleInsights}
-                  className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium flex items-center transition-colors duration-200"
+                  className="text-black hover:text-[#00d9a6] px-3 py-2 text-lg font-medium flex items-center transition-colors duration-200"
                 >
                   Insights
                   <ChevronDown 
@@ -90,9 +90,11 @@ const Navbar = () => {
 
           {/* Contact Us Button - Desktop */}
           <div className="hidden lg:block">
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded text-sm font-medium transition-colors duration-200">
+             <Link href="/Contact-us"  > 
+            <button className="bg-[#00d9a6] text-white px-6 py-2 rounded text-sm font-medium transition-colors duration-200">
               Contact us
             </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -156,9 +158,11 @@ const Navbar = () => {
               
               {/* Mobile Contact Button */}
               <div className="px-3 py-2">
-                <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded text-sm font-medium w-full transition-colors duration-200">
+                <Link href="/Contact-us">
+                <button className="bg-[#00d9a6] text-white px-6 py-2 rounded text-sm font-medium w-full transition-colors duration-200">
                   Contact us
                 </button>
+                </Link>
               </div>
             </div>
           </div>
