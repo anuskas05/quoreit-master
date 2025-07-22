@@ -14,7 +14,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* ✅ Cookiebot script */}
-        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="78869508-adbc-4a8b-af19-83bdf0866c05" data-blockingmode="auto" type="text/javascript"></script>
+        <script id="Cookiebot"
+  src="https://consent.cookiebot.com/78869508-adbc-4a8b-af19-83bdf0866c05/cd.js"
+  data-cbid="78869508-adbc-4a8b-af19-83bdf0866c05"
+  data-blockingmode="auto"
+  data-culture="EN"
+  type="text/javascript">
+</script>
+
       </head>
       <body className="bg-white text-black dark:bg-black dark:text-white">
         {!isCookiesPage && <Navbar />}
