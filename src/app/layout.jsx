@@ -14,14 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* ✅ Cookiebot script */}
-        <Script
-          id="cookiebot"
-          src="https://consent.cookiebot.com/uc.js"
-          data-cbid="16f66979-8395-44dd-9ee9-dcc595a2bd70"
-          data-blockingmode="auto"
-          type="text/javascript"
-          strategy="afterInteractive"
-        />
+        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="78869508-adbc-4a8b-af19-83bdf0866c05" data-blockingmode="auto" type="text/javascript"></script>
       </head>
       <body className="bg-white text-black dark:bg-black dark:text-white">
         {!isCookiesPage && <Navbar />}
