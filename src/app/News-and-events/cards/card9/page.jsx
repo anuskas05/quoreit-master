@@ -1,194 +1,320 @@
-'use client';
+ 'use client';
 
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 
-const card9 = () => {
-  const cards = [
-         {
-      id: 'card1',
-      image: '/images/card1.webp',
-      title: 'Egyptian HVN.TV – Beware of entity unlawfully trying associate with us',
-      link: '/News-and-events/cards/card1',
-    },
-    {
-      id: 'card2',
-      image: '/images/card2.webp',
-      title: "Nash Squared CEO, Bev White shortlisted for Computer Weekly’s 50 Most Influential Women in UK Tech",
-      link: '/News-and-events/cards/card2',
-    },
-    {
-      id: 'card3',
-      image: '/images/card3.webp',
-      title: 'Where are all the technologists? Talent shortages and what to do about them?',
-      link: '/News-and-events/cards/card3',
-    },
-    {
-      id: 'card4',
-      image: '/images/card4.webp',
-      title: 'Rachel Watts joins Harvey Nash Group as Global Marketing Director',
-      link: '/News-and-events/cards/card4',
-    },
-    {
-      id: 'card5',
-      image: '/images/card5.webp',
-      title: 'Harvey Nash Group pledge to use renewable energy by 2023',
-      link: '/News-and-events/cards/card5',
-    },
-    {
-      id: 'card6',
-      image: '/images/card6.webp',
-      title: 'Harvey Nash appoints cyber expert as Global CISO',
-      link: '/News-and-events/cards/card6',
-    },
-  ];
+const WhatWeDo = () => {
+  const scrollToLocations = () => {
+    const locationsSection = document.getElementById('locations-section');
+    if (locationsSection) {
+      locationsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-  const isExternal = (url) => url.startsWith('http');
+  // Structured data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Harvey Nash",
+    "description": "Technology recruitment services across 30+ countries providing permanent and contract staffing solutions",
+    "url": "https://www.harveynash.co.uk",
+    "serviceType": "Technology Recruitment",
+    "areaServed": ["Belgium", "Canada", "Germany", "Ireland", "Netherlands", "Poland", "USA", "United Kingdom"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "url": "/Contact-us"
+    }
+  };
 
   return (
     <>
-      <section className="relative h-96 flex items-center justify-center overflow-hidden mt-20">
+      <Head>
+        <title>What We Do - Technology Recruitment Services | Harvey Nash</title>
+        <meta 
+          name="description" 
+          content="Harvey Nash provides technology recruitment services across 30+ countries. We help organizations recruit experienced IT professionals on permanent and contract basis with tailored workforce solutions."
+        />
+        <meta name="keywords" content="technology recruitment, IT staffing, permanent recruitment, contract recruitment, workforce solutions, recruitment process outsourcing" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="What We Do - Technology Recruitment Services | Harvey Nash" />
+        <meta property="og:description" content="Harvey Nash provides technology recruitment services across 30+ countries. We help organizations recruit experienced IT professionals." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/what-we-do.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="What We Do - Technology Recruitment Services | Harvey Nash" />
+        <meta name="twitter:description" content="Harvey Nash provides technology recruitment services across 30+ countries." />
+        <link rel="canonical" href="https://www.harveynash.co.uk/what-we-do" />
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </Head>
+
+      {/* Hero Section */}
+      <section 
+        className="relative h-96 flex items-center justify-center overflow-hidden mt-20"
+        role="banner"
+        aria-labelledby="hero-heading"
+      >
+        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/news.webp"
-            alt="Candidates Hero Background"
+            src="/images/jobs_hero.jpg"
+            alt="Technology recruitment professionals working together in modern office environment"
             fill
-            quality={100}
-            priority
             className="object-cover object-center"
+            priority
+            quality={90}
+            sizes="100vw"
+            loading="eager"
           />
-          <div className="absolute inset-0 bg-black/30"></div>
+          {/* Dark overlay for better text contrast */}
+          <div className="absolute inset-0 bg-black/30" aria-hidden="true"></div>
         </div>
+
+        {/* Content */}
         <div className="relative z-10 text-center">
-          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-white tracking-wide">
-            News and Event
+          <h1 
+            id="hero-heading"
+            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-white tracking-wide"
+          >
+            What we do
           </h1>
         </div>
       </section>
 
-   <main className="px-6 py-12 max-w-3xl mx-auto text-gray-800">
-  <h1 className="text-3xl md:text-4xl font-bold mb-6 text-red-800">
-    National Coming Out Day
-  </h1>
-
-  <div className="mb-6">
-    <Image
-      src="/images/card9.webp"
-      alt="National Coming Out Day Banner"
-      width={800}
-      height={600}
-      className="rounded-lg shadow-lg w-full"
-    />
-  </div>
-
-  <p className="italic mb-4 text-lg">
-    <strong>What is National Coming Out Day?</strong><br />
-    Oct. 11, 2021 will mark the 33rd National Coming Out Day, which is where we collectively celebrate and mark LGBTQIA+ awareness for their continued fight for equal rights and acceptance. It is an opportunity to come out for the first time, to share a coming out story, to support others who might be struggling to accept or disclose their identity, or simply to promote being out and being part of the LGBTQIA+ community. We’re delighted to share Director of Higher Education at{' '}
-    <a
-      href="https://www.alumniglobal.com"
-      className="text-blue-600 underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Alumni Global
-    </a>,{' '}
-    <a
-      href="https://www.alumniglobal.com/owen-francis"
-      className="text-blue-600 underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Owen Francis
-    </a>' story.
-  </p>
-
-  <h2 className="text-2xl font-bold mt-10 mb-4 text-gray-900">
-    A conversation with Owen Francis
-  </h2>
-
-  <div className="mb-6">
-    <Image
-      src="/images/person.jpg"
-      alt="Owen Francis"
-      width={400}
-      height={400}
-      className="rounded-lg shadow-md"
-    />
-  </div>
-
-  <h3 className="text-lg font-semibold italic mb-4 text-gray-800">
-    How do you celebrate PRIDE and what does it mean to you?
-  </h3>
-
-  <p className="mb-4 text-lg leading-relaxed">
-    Pride is an interesting one for me; I am an ‘out’ transgender man and so a visible member of the LGBTQ+ community, although in recent years I’ve certainly not been as active in participating in Pride celebrations. Before I came out as transgender ten years ago and subsequently began the process of transitioning, I felt a lot of shame in being trans and felt there was something inherently wrong with me, and so in fact pride was the least thing I felt about my identity...
-  </p>
-
-  <p className="mb-4 text-lg leading-relaxed">
-    I met others like me at events like Pride, and I also met those like me who were scared of coming out but who knew, through the visibility of things like Pride, that there was a life of acceptance, happiness and freedom available to them...
-  </p>
-
-  <p className="mb-4 text-lg leading-relaxed">
-    This was critical when I was finding my feet in my own identity as a man, and navigating things like depression and anxiety that can often come with the process of transitioning, as well as elation!...
-  </p>
-
-  <p className="mb-4 text-lg leading-relaxed">
-    <strong>
-      <a
-        href="https://www.stonewall.org.uk"
-        className="text-blue-600 underline"
-        target="_blank"
-        rel="noopener noreferrer"
+      {/* Technology Recruitment Section */}
+      <section 
+        className="w-full bg-[#f4f4f4] py-8"
+        aria-labelledby="tech-recruitment-heading"
       >
-        Stonewall
-      </a>
-    </strong>, for example, the UK’s leading charity for LGBTQ+ people, was built on the back of what you might think of as ‘ruptures’ in the political system...
-  </p>
-
-  <p className="mb-4 text-lg leading-relaxed">
-    Don’t get me wrong, I love all of that. I don’t know anyone that doesn’t love that, but I think it’s important to remember that a lot of where Pride came from was struggle...
-  </p>
-</main>
-
-
-      <section className="py-10 px-4 bg-gray-100">
-        <div className="max-w-4xl mx-auto grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2">
-          {cards.map((card) => {
-            const external = isExternal(card.link);
-            return (
-              <div
-                key={card.id}
-                className="bg-white w-full max-w-xs mx-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            {/* Text content */}
+            <div className="md:w-1/2 mb-6 md:mb-0">
+              <h2 
+                id="tech-recruitment-heading"
+                className="text-3xl font-bold text-[#333] mb-4"
               >
+                Technology Recruitment
+              </h2>
+              
+              <p className="text-lg text-[#333] mb-4">
+                We help organisations across more than 30 countries recruit highly experienced experts on a permanent and contract basis.
+              </p>
+              
+              <p className="text-lg text-[#333] mb-6">
+                In addition, our Recruitment Solutions business provides tailored services that help companies recruit and manage their workforce more effectively, from payroll services to recruitment process outsourcing and more.
+              </p>
+              
+              <nav className="flex flex-col space-y-3" aria-label="Quick navigation">
+                <button 
+                  onClick={scrollToLocations}
+                  className="text-[#0066cc] text-lg hover:underline cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-[#0066cc] focus:ring-offset-2 rounded"
+                  aria-describedby="locations-description"
+                >
+                  Select your Recruitment location
+                </button>
+                <span id="locations-description" className="sr-only">
+                  Navigate to our global locations section below
+                </span>
+                
+                <Link 
+                  href="https://www.harveynash.co.uk/talent-solutions"
+                  className="text-[#0066cc] text-lg hover:underline focus:outline-none focus:ring-2 focus:ring-[#0066cc] focus:ring-offset-2 rounded"
+                  rel="noopener"
+                  target="_blank"
+                  aria-label="Find out about Workforce Solutions (opens in new tab)"
+                >
+                  Find out about Workforce Solutions
+                </Link>
+              </nav>
+            </div>
+            
+            {/* Image */}
+            <div className="md:w-1/2 flex justify-center md:justify-end">
+              <div className="relative w-full h-64 md:h-80">
                 <Image
-                  src={card.image}
-                  alt={card.title}
-                  width={320}
-                  height={200}
-                  className="w-full h-36 object-cover rounded-t-lg"
-                  quality={100}
+                  src="/images/what-we-do.webp"
+                  alt="Professional technology recruitment consultants collaborating on candidate placement strategies"
+                  fill
+                  className="object-contain rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  loading="lazy"
+                  quality={85}
                 />
-                <div className="p-3 flex flex-col justify-between h-40">
-                  <h3 className="text-sm font-semibold text-blue-700 mb-2 hover:underline leading-snug">
-                    {external ? (
-                      <a href={card.link} target="_blank" rel="noopener noreferrer">
-                        {card.title}
-                      </a>
-                    ) : (
-                      <Link href={card.link}>{card.title}</Link>
-                    )}
-                  </h3>
-
-                  
-                </div>
               </div>
-            );
-          })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location/Site Section */}
+      <section 
+        id="locations-section" 
+        className="w-full bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] text-white px-6 py-12"
+        aria-labelledby="locations-heading"
+      >
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left min-h-[40vh]">
+          {/* Column 1 - Locations */}
+          <div>
+            <h3 
+              id="locations-heading"
+              className="text-2xl font-extrabold mb-4 text-black/80"
+            >
+              Choose your location
+            </h3>
+            <nav 
+              className="grid grid-cols-2 gap-2 text-black/90 text-base"
+              aria-label="Global locations"
+            >
+              <Link 
+                href="https://www.harveynash.be/"
+                className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
+                rel="noopener"
+                target="_blank"
+                aria-label="Harvey Nash Belgium (opens in new tab)"
+              >
+                Belgium
+              </Link>
+              <Link 
+                href="https://www.harveynashusa.com/"
+                className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
+                rel="noopener"
+                target="_blank"
+                aria-label="Harvey Nash Canada (opens in new tab)"
+              >
+                Canada
+              </Link>
+              <Link 
+                href="https://www.harveynash.de/"
+                className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
+                rel="noopener"
+                target="_blank"
+                aria-label="Harvey Nash Germany (opens in new tab)"
+              >
+                Germany
+              </Link>
+              <Link 
+                href="https://www.harveynash.ie/"
+                className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
+                rel="noopener"
+                target="_blank"
+                aria-label="Harvey Nash Ireland (opens in new tab)"
+              >
+                Ireland
+              </Link>
+              <Link 
+                href="https://www.harveynash.nl/"
+                className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
+                rel="noopener"
+                target="_blank"
+                aria-label="Harvey Nash Netherlands (opens in new tab)"
+              >
+                Netherlands
+              </Link>
+              <Link 
+                href="https://www.harveynash.pl/"
+                className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
+                rel="noopener"
+                target="_blank"
+                aria-label="Harvey Nash Poland (opens in new tab)"
+              >
+                Poland
+              </Link>
+              <Link 
+                href="https://www.harveynashusa.com/"
+                className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
+                rel="noopener"
+                target="_blank"
+                aria-label="Harvey Nash USA (opens in new tab)"
+              >
+                USA
+              </Link>
+              <Link 
+                href="https://www.harveynash.co.uk/"
+                className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
+                rel="noopener"
+                target="_blank"
+                aria-label="Harvey Nash United Kingdom (opens in new tab)"
+              >
+                United Kingdom
+              </Link>
+            </nav>
+          </div>
+
+          {/* Spacer */}
+          <div className="hidden md:block" aria-hidden="true" />
+
+          {/* Column 2 - Site Links */}
+          <div>
+            <h3 className="text-2xl font-extrabold mb-4 text-black/80">
+              Related Sites
+            </h3>
+            <nav aria-label="Related company sites">
+              <ul className="space-y-1 text-black/90">
+                <li>
+                  <Link 
+                    href="https://www.nashsquared.com/"
+                    className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
+                    rel="noopener"
+                    target="_blank"
+                    aria-label="Nash Squared (opens in new tab)"
+                  >
+                    Nash Squared
+                  </Link>
+                </li>
+                <li>
+                  <Link 
+                    href="https://www.flexhuisglobal.com/uk/"
+                    className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
+                    rel="noopener"
+                    target="_blank"
+                    aria-label="Workforce Solutions (opens in new tab)"
+                  >
+                    Workforce Solutions
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section
+        className="bg-cover bg-center w-full min-h-[60vh] flex flex-col justify-center items-center text-white text-center relative"
+        style={{ backgroundImage: "url('/images/keyboard.jpg')" }}
+        aria-labelledby="contact-heading"
+      >
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40" aria-hidden="true"></div>
+        
+        <div className="relative z-10">
+          <h2 
+            id="contact-heading"
+            className="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg"
+          >
+            How can we help?
+          </h2>
+          <p className="text-lg md:text-xl mb-6 max-w-4xl drop-shadow-md px-4">
+            If you would like us to contact you with more information on what we do and what we can offer, please let us know.
+          </p>
+
+          <Link 
+            href="/Contact-us"
+            className="inline-block bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] font-semibold py-3 px-6 rounded transition-all duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 text-black"
+            aria-label="Contact us to learn more about our services"
+          >
+            CONTACT US
+          </Link>
         </div>
       </section>
     </>
   );
 };
 
-export default card9;
+export default WhatWeDo;

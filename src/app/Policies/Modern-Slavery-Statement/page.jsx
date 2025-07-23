@@ -1,4 +1,6 @@
+ "use client";
 import React from 'react';
+import Link from 'next/link';
 import Navbar from "@/components/newNavbar";
 import Footer from "@/components/newFooter";
 const ModernSlaveryStatement = () => {
@@ -216,10 +218,25 @@ const ModernSlaveryStatement = () => {
           </div>
         </div>
       </div>
+
+      {/* Contact Section - Moved outside the main content container */}
+      <div
+        className="bg-cover bg-center w-full min-h-[60vh] flex flex-col justify-center items-center text-white text-center"
+        style={{ backgroundImage: "url('/images/keyboard.jpg')" }}
+      >
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">
+          We're ready to help you build a limitless future
+        </h1>
+        <Link href="/Contact-us">
+          <button className="bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] font-semibold py-3 px-6 rounded transition-all duration-300 shadow-md">
+            CONTACT US
+          </button>
+        </Link>
+      </div>
     </div>
     <Footer />
     </>
   );
 };
 
-export default ModernSlaveryStatement;
+export default ModernSlaveryStatement; 
