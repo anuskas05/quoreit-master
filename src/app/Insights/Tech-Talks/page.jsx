@@ -65,23 +65,19 @@ const TechTalksHero = () => {
     return (
       <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          {/* Section Title */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Don't just take our word for it</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Don&apos;t just take our word for it</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
           </div>
 
-          {/* Subtitle */}
           <p className="text-xl text-gray-600 text-center mb-12">
             Hear from some of the amazing Tech leaders who have featured on Tech Talks.
           </p>
 
-          {/* Testimonials Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <blockquote className="text-gray-700 italic mb-4">
-                "David has a unique ability to keep the conversation fast paced without skipping important details. Context remains even with complex topics."
+                &quot;David has a unique ability to keep the conversation fast paced without skipping important details. Context remains even with complex topics.&quot;
               </blockquote>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-gray-900">Joel Tasche</p>
@@ -89,10 +85,9 @@ const TechTalksHero = () => {
               </div>
             </div>
 
-            {/* Testimonial 2 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <blockquote className="text-gray-700 italic mb-4">
-                "On Tech Talks, you dive straight into a great, flowing conversation. His insightful questions about technology and the InvestEngine platform made for an engaging discussion."
+                &quot;On Tech Talks, you dive straight into a great, flowing conversation. His insightful questions about technology and the InvestEngine platform made for an engaging discussion.&quot;
               </blockquote>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-gray-900">Tom Winterton</p>
@@ -100,10 +95,9 @@ const TechTalksHero = () => {
               </div>
             </div>
 
-            {/* Testimonial 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <blockquote className="text-gray-700 italic mb-4">
-                "Joining the Tech Talk podcast with David was an amazing experience; he's a skilled host who makes the conversation enjoyable and engaging. I would welcome the opportunity to come back for another chat!"
+                &quot;Joining the Tech Talk podcast with David was an amazing experience; he&apos;s a skilled host who makes the conversation enjoyable and engaging. I would welcome the opportunity to come back for another chat!&quot;
               </blockquote>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-gray-900">Kathryn Rose</p>
@@ -145,7 +139,6 @@ const TechTalksHero = () => {
       
       {/* Hero Section */}
       <div className="relative min-h-screen">
-        {/* Background Image with overlay */}
         <div className="absolute inset-0">
           <Image
             src="/images/podcast-techtalks.jpeg"
@@ -158,7 +151,6 @@ const TechTalksHero = () => {
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </div>
         
-        {/* Content */}
         <div className="relative z-10 min-h-screen flex items-center justify-center">
           <div className="max-w-2xl mx-auto p-8 bg-white bg-opacity-90 rounded-lg shadow-lg backdrop-blur-sm">
             <div className="mb-8">
@@ -190,7 +182,6 @@ const TechTalksHero = () => {
           </div>
 
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            {/* Podcast Header with Image */}
             <div className="relative h-64">
               <Image
                 src="/images/person.webp"
@@ -205,23 +196,21 @@ const TechTalksHero = () => {
               </div>
             </div>
 
-            {/* Podcast Description */}
             <div className="p-8">
               <p className="text-gray-700 mb-4">
-                Too often, companies approach diversity and inclusion as a box to check rather than a core value to embed throughout their organizations. In today's episode of 'Tech Talks' we celebrate and observe Black History Month with a discussion; professionals from tech, law, and business analysis fields share their candid experiences navigating corporate spaces as underrepresented minorities.
+                Too often, companies approach diversity and inclusion as a box to check rather than a core value to embed throughout their organizations. In today&apos;s episode of &apos;Tech Talks&apos; we celebrate and observe Black History Month with a discussion; professionals from tech, law, and business analysis fields share their candid experiences navigating corporate spaces as underrepresented minorities.
               </p>
               <p className="text-gray-700 mb-4">
-                David hands over the hosting duties to Harvey Nash's Emmanuel Sockey, who leads the conversation as a member of the community. Together he and our guests highlight the pivotal role mentors played in their journeys and the importance of companies promoting diverse talent into true leadership roles.
+                David hands over the hosting duties to Harvey Nash&apos;s Emmanuel Sockey, who leads the conversation as a member of the community. Together he and our guests highlight the pivotal role mentors played in their journeys and the importance of companies promoting diverse talent into true leadership roles.
               </p>
               <p className="text-gray-700">
-                They also openly discuss the mental health toll of having to "code-switch" identities and repress authentic selves in professional settings. The conversation provides a reality check that diversity isn't achieved through superficial initiatives like culture celebrations alone. True inclusion requires examining policies, language, supplier diversity and leadership makeup.
+                They also openly discuss the mental health toll of having to &quot;code-switch&quot; identities and repress authentic selves in professional settings. The conversation provides a reality check that diversity isn&apos;t achieved through superficial initiatives like culture celebrations alone. True inclusion requires examining policies, language, supplier diversity and leadership makeup.
               </p>
               <p className="text-gray-700">
-                Lasting change happens by creating environments where all feel empowered to show up fully as themselves. There is powerful advice about developing resilience, reframing rejection as "next opportunity", and getting comfortable with being uncomfortable on the path to progress. It's an eye-opening listen for leaders committed to advancing meaningful inclusion as an organizational imperative.
+                Lasting change happens by creating environments where all feel empowered to show up fully as themselves. There is powerful advice about developing resilience, reframing rejection as &quot;next opportunity&quot;, and getting comfortable with being uncomfortable on the path to progress. It&apos;s an eye-opening listen for leaders committed to advancing meaningful inclusion as an organizational imperative.
               </p>
             </div>
 
-            {/* Play Button */}
             <div className="px-8 pb-8">
               <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +221,6 @@ const TechTalksHero = () => {
               </button>
             </div>
 
-            {/* Guest Info */}
             <div className="bg-gray-100 px-8 py-6 border-t border-gray-200">
               <h4 className="font-semibold text-gray-900 mb-4">Featured Guests:</h4>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -259,16 +247,13 @@ const TechTalksHero = () => {
 
       {/* Additional Card Section */}
       <div className="max-w-md mx-auto bg-[#f4f4f4] p-4 rounded-lg shadow-sm my-8">
-        {/* Main Title - Clickable */}
         <Link href="#" className="block mb-2">
           <h1 className="text-2xl font-bold text-gray-800 hover:text-blue-600 transition-colors">
             Beyond the Diversity Checklist: Embedding True Inclusion in the Workplace
           </h1>
         </Link>
 
-        {/* Metadata Row */}
         <div className="flex justify-between items-center text-sm text-gray-600">
-          {/* Left side - "aii" and date */}
           <div className="flex items-center space-x-2">
             <Link href="#" className="font-medium hover:text-blue-600 transition-colors">
               aii
@@ -277,7 +262,6 @@ const TechTalksHero = () => {
             <span>Oct 28 - Tech Talks</span>
           </div>
 
-          {/* Right side - Chinese character and Spotify button */}
           <div className="flex items-center space-x-3">
             <Link href="#" className="hover:text-blue-600 transition-colors">
               中
@@ -302,7 +286,6 @@ const TechTalksHero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-            {/* Apple Podcasts Button */}
             <Link 
               href="https://podcasts.apple.com" 
               target="_blank"
@@ -315,7 +298,6 @@ const TechTalksHero = () => {
               <span className="font-medium">Apple Podcasts</span>
             </Link>
 
-            {/* Spotify Button */}
             <Link 
               href="https://open.spotify.com" 
               target="_blank"
@@ -328,7 +310,6 @@ const TechTalksHero = () => {
               <span className="font-medium">Spotify</span>
             </Link>
 
-            {/* Google Podcasts Button */}
             <Link 
               href="https://podcasts.google.com" 
               target="_blank"
@@ -346,7 +327,6 @@ const TechTalksHero = () => {
 
       {/* Podcast Playlist Section */}
       <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Podcast Playlist</h1>
           <p className="text-xl text-gray-600">
@@ -355,7 +335,6 @@ const TechTalksHero = () => {
         </div>
 
         <div className="border-t border-gray-200 pt-8">
-          {/* Best of Tech Talks Section */}
           <div className="mb-12">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-2xl font-bold text-gray-900">The best of Tech Talks</h2>
@@ -373,7 +352,6 @@ const TechTalksHero = () => {
             </div>
           </div>
 
-          {/* Featured Playlist */}
           <div className="mb-12">
             <h3 className="text-xl font-bold text-gray-900 mb-6">Safe Journeys: Navigating the World for LGBTQ Travelers</h3>
             
@@ -397,7 +375,6 @@ const TechTalksHero = () => {
             </div>
           </div>
 
-          {/* View All Button */}
           <div className="text-center">
             <Link 
               href="#" 
@@ -411,7 +388,6 @@ const TechTalksHero = () => {
 
       {/* Second Hero Section */}
       <div className="relative h-screen w-full">
-        {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/images/tech-talks-bg.jpg"
@@ -421,23 +397,18 @@ const TechTalksHero = () => {
             quality={100}
             priority
           />
-          {/* Dark overlay for better text contrast */}
           <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         </div>
         
-        {/* Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-          {/* TECH TALKS text with line break */}
           <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tight mb-4">
             TECH<br />TALKS
           </h1>
           
-          {/* Hosted by text */}
           <p className="text-xl md:text-2xl text-white font-light tracking-wider">
             HOSTED BY DAVID SAVAGE
           </p>
           
-          {/* Optional decorative element */}
           <div className="w-24 h-1 bg-white mt-8"></div>
         </div>
       </div>
@@ -445,7 +416,6 @@ const TechTalksHero = () => {
       {/* Industry Focus Section */}
       <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* Header Section */}
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Industry Focus</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -453,7 +423,6 @@ const TechTalksHero = () => {
             </p>
           </div>
 
-          {/* Focus Areas Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {focusAreas.map((area, index) => (
               <Link 
@@ -485,7 +454,6 @@ const TechTalksHero = () => {
       <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-12">
-            {/* Image on the left */}
             <div className="w-full md:w-1/3 lg:w-1/4">
               <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
                 <Image
@@ -499,22 +467,20 @@ const TechTalksHero = () => {
               </div>
             </div>
 
-            {/* Content on the right */}
             <div className="w-full md:w-2/3 lg:w-3/4">
               <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                Meet David Savage, the driving force behind Nash Squared's Tech Talks
+                Meet David Savage, the driving force behind Nash Squared&apos;s Tech Talks
               </h1>
 
               <div className="prose prose-lg text-gray-700 space-y-4">
                 <p>
-                  David is Nash Squared's Group Technology Evangelist. He crafts podcasts, hosts video debates, speaks, moderates conferences, and chairs keynote stages. He's a passionate advocate for technology, dissecting its challenges and opportunities.
+                  David is Nash Squared&apos;s Group Technology Evangelist. He crafts podcasts, hosts video debates, speaks, moderates conferences, and chairs keynote stages. He&apos;s a passionate advocate for technology, dissecting its challenges and opportunities.
                 </p>
                 <p>
-                  David has worked at Nash Squared since 2007, where he has developed a deep understanding of the technology and talent markets. Recognised as Computing's Digital Ambassador of the Year (2018), he brings a wealth of experience and knowledge to every conversation.
+                  David has worked at Nash Squared since 2007, where he has developed a deep understanding of the technology and talent markets. Recognised as Computing&apos;s Digital Ambassador of the Year (2018), he brings a wealth of experience and knowledge to every conversation.
                 </p>
               </div>
 
-              {/* Optional CTA button */}
               <div className="mt-8">
                 <Link
                   href="/tech-talks"
@@ -522,7 +488,7 @@ const TechTalksHero = () => {
                 >
                   Explore Tech Talks
                   <svg className="ml-3 -mr-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />s
                   </svg>
                 </Link>
               </div>
@@ -531,10 +497,7 @@ const TechTalksHero = () => {
         </div>
       </div>
 
-      {/* Testimonials Section */}
       <TestimonialsSection />
-
-      {/* Guest Invitation Section */}
       <GuestInvitation />
       <Footer />
     </div>
