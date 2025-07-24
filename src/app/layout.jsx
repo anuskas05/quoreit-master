@@ -9,10 +9,18 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   const pathname = usePathname();
 
-  const hideLayout =
-    pathname === "/Policies/Cookies-Legal" ||
-    pathname === "/Policies/Modern-Slavery-Statement" ||
-    pathname === "/Policies/Privacy-Policy";
+ const hideLayout =
+  pathname === "/Policies/Cookies-Legal" ||
+  pathname === "/Policies/Modern-Slavery-Statement" ||
+  pathname === "/Quick-Links/What-we-do" ||
+  pathname === "/Quick-Links/About-us" ||
+  pathname === "/Quick-Links/Our-Brands" ||
+  pathname === "/Quick-Links/Newsroom" ||
+  pathname === "/Quick-Links/Work-for-us" ||
+  pathname === "/Quick-Links/Contact-us" ||
+  pathname === "/Quick-Links/Wellbeing-Hub" ||
+  pathname === "/Insights/Tech-Talks";
+
 
   return (
     <html lang="en">

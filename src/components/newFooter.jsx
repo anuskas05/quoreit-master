@@ -24,13 +24,13 @@ export default function Footer2() {
         <div>
           <h4 className="font-bold mb-3">Quick Links</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link href="#">What we do</Link></li>
-            <li><Link href="#">About us</Link></li>
-            <li><Link href="#">Our Brands</Link></li>
-            <li><Link href="#">Newsroom</Link></li>
-            <li><Link href="#">Work for us</Link></li>
-            <li><Link href="#">Contact us</Link></li>
-            <li><Link href="#">Wellbeing Hub</Link></li>
+            <li><Link href="/Quick-Links/What-we-do">What we do</Link></li>
+            <li><Link href="/Quick-Links/About-us">About us</Link></li>
+            <li><Link href="/Quick-Links/Our-Brands">Our Brands</Link></li>
+            <li><Link href="/Quick-Links/Newsroom">Newsroom</Link></li>
+            <li><Link href="/Quick-Links/Work-for-us">Work for us</Link></li>
+            <li><Link href="/Quick-Links/Contact-us">Contact us</Link></li>
+            <li><Link href="/Quick-Links/Wellbeing-Hub">Wellbeing Hub</Link></li>
           </ul>
         </div>
 
@@ -38,7 +38,7 @@ export default function Footer2() {
         <div>
           <h4 className="font-bold mb-3">Insights</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link href="#">Tech Talks</Link></li>
+            <li><Link href="/Insights/Tech-Talks">Tech Talks</Link></li>
             <li><Link href="#">Digital Leadership Report 2025</Link></li>
             <li><Link href="#">Diversity & Inclusion</Link></li>
             <li><Link href="#">Women in Tech</Link></li>
