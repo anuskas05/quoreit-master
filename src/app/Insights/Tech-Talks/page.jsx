@@ -1,8 +1,9 @@
-import React from 'react';
+ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/newNavbar";
+import Footer from "@/components/newFooter";
+
 const TechTalksHero = () => {
   const podcastEpisodes = [
     {
@@ -61,11 +62,7 @@ const TechTalksHero = () => {
   ];
 
   const TestimonialsSection = () => {
-   
-    <
     return (
-         <> 
-         <Navbar />
       <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Section Title */}
@@ -144,6 +141,8 @@ const TechTalksHero = () => {
 
   return (
     <div className="bg-white">
+      <Navbar />
+      
       {/* Hero Section */}
       <div className="relative min-h-screen">
         {/* Background Image with overlay */}
@@ -537,9 +536,8 @@ const TechTalksHero = () => {
 
       {/* Guest Invitation Section */}
       <GuestInvitation />
+      <Footer />
     </div>
-    <Footer />
-    </>
   );
 };
 
