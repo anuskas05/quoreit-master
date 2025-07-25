@@ -2,7 +2,8 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import Navbar from "@/components/newNavbar";
+import Footer from "@/components/newFooter";
 import { Target, Plus, Minus } from "lucide-react";
 
 const DigitalLeadershipReport = () => {
@@ -160,6 +161,8 @@ const handleDownload = (fileType) => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div
@@ -726,6 +729,8 @@ const handleDownload = (fileType) => {
         </div>
       </div>
     </div>
+    <Footer />
+     </>
   );
 };
 

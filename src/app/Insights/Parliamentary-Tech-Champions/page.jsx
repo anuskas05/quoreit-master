@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import Navbar from "@/components/newNavbar";
+import Footer from "@/components/newFooter";
 const ParliamentaryTechChampions = () => {
   const champions = [
     {
@@ -70,6 +71,8 @@ const ParliamentaryTechChampions = () => {
   ];
 
   return (
+    <>
+    <Navbar />
     <div className="bg-gray-50 min-h-screen py-8 px-4 mt-20 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
@@ -126,6 +129,8 @@ const ParliamentaryTechChampions = () => {
       
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

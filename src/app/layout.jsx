@@ -9,26 +9,29 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   const pathname = usePathname();
 
- const hideLayout =
-  pathname === "/Policies/Cookies-Legal" ||
-  pathname === "/Policies/Modern-Slavery-Statement" ||
-  pathname === "/Quick-Links/What-we-do" ||
-  pathname === "/Quick-Links/About-us" ||
-  pathname === "/Quick-Links/Our-Brands" ||
-  pathname === "/Quick-Links/Newsroom" ||
-  pathname === "/Quick-Links/Work-for-us" ||
-  pathname === "/Quick-Links/Contact-us" ||
-  pathname === "/Quick-Links/Wellbeing-Hub" ||
-  pathname === "/Insights/Tech-Talks"||
-    pathname === "/Insights/Digital-Leadership-Report-2025" ||
-      pathname === "/Insights/Diversity-Inclusion" ||
-        pathname === "/Insights/Women-in-Tech" ||
-          pathname === "/Insights/Cybersecurity" ||
-            pathname === "/Insights/Comment-Analysis" ||
-              pathname === "/Insights/Blogs" ||
-                pathname === "/Insights/Tech-Flix" ||
-                pathname === "/Insights/Parliamentary-Tech-Champions" ;
- 
+  const hiddenPaths = [
+    "/Policies/Cookies-Legal",
+    "/Policies/Modern-Slavery-Statement",
+    "/Quick-Links/What-we-do",
+    "/Quick-Links/About-us",
+    "/Quick-Links/Our-Brands",
+    "/Quick-Links/Newsroom",
+    "/Quick-Links/Work-for-us",
+    "/Quick-Links/Contact-us",
+    "/Quick-Links/Wellbeing-Hub",
+    "/Insights/Tech-Talks",
+    "/Insights/Digital-Leadership-Report-2025",
+    "/Insights/Diversity-Inclusion",
+    "/Insights/Women-in-Tech",
+    "/Insights/Cybersecurity",
+    "/Insights/Comment-Analysis",
+    "/Insights/Blogs",
+    "/Insights/Tech-Flix",
+    "/Insights/Parliamentary-Tech-Champions",
+    "/Insights/Parliamentary-Tech-Champions/Baroness-smith-of-llanfaes"
+  ];
+
+  const hideLayout = hiddenPaths.some((path) => pathname?.startsWith(path));
 
   return (
     <html lang="en">

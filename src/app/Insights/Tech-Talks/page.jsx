@@ -1,8 +1,7 @@
  import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from "@/components/newNavbar";
-import Footer from "@/components/newFooter";
+ 
 
 const TechTalksHero = () => {
   const podcastEpisodes = [
