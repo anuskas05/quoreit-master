@@ -39,14 +39,14 @@ export default function Footer2() {
           <h4 className="font-bold mb-3">Insights</h4>
           <ul className="space-y-2 text-sm">
             <li><Link href="/Insights/Tech-Talks">Tech Talks</Link></li>
-            <li><Link href="#">Digital Leadership Report 2025</Link></li>
-            <li><Link href="#">Diversity & Inclusion</Link></li>
-            <li><Link href="#">Women in Tech</Link></li>
-            <li><Link href="#">Cybersecurity</Link></li>
-            <li><Link href="#">Comment & Analysis</Link></li>
-            <li><Link href="#">Blogs</Link></li>
-            <li><Link href="#">Tech Flix</Link></li>
-            <li><Link href="#">Parliamentary Tech Champions</Link></li>
+            <li><Link href="/Insights/Digital-Leadership-Report-2025">Digital Leadership Report 2025</Link></li>
+            <li><Link href="/Insights/Diversity-Inclusion">Diversity & Inclusion</Link></li>
+            <li><Link href="/Insights/Women-in-Tech">Women in Tech</Link></li>
+            <li><Link href="/Insights/Cybersecurity">Cybersecurity</Link></li>
+            <li><Link href="/Insights/Comment-Analysis">Comment & Analysis</Link></li>
+            <li><Link href="/Insights/Blogs">Blogs</Link></li>
+            <li><Link href="/Insights/Tech-Flix">Tech Flix</Link></li>
+            <li><Link href="/Insights/Parliamentary-Tech-Champions">Parliamentary Tech Champions</Link></li>
           </ul>
         </div>
 

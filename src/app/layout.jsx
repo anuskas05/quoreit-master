@@ -19,8 +19,16 @@ export default function RootLayout({ children }) {
   pathname === "/Quick-Links/Work-for-us" ||
   pathname === "/Quick-Links/Contact-us" ||
   pathname === "/Quick-Links/Wellbeing-Hub" ||
-  pathname === "/Insights/Tech-Talks";
-
+  pathname === "/Insights/Tech-Talks"||
+    pathname === "/Insights/Digital-Leadership-Report-2025" ||
+      pathname === "/Insights/Diversity-Inclusion" ||
+        pathname === "/Insights/Women-in-Tech" ||
+          pathname === "/Insights/Cybersecurity" ||
+            pathname === "/Insights/Comment-Analysis" ||
+              pathname === "/Insights/Blogs" ||
+                pathname === "/Insights/Tech-Flix" ||
+                pathname === "/Insights/Parliamentary-Tech-Champions" ;
+ 
 
   return (
     <html lang="en">
