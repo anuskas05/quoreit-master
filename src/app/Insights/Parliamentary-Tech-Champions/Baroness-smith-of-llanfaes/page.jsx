@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import Navbar from "@/components/newNavbar";
+import Footer from "@/components/newFooter";
 const ChampionArticlePage = () => {
   const champions = [
     {
@@ -28,6 +29,8 @@ const ChampionArticlePage = () => {
   ];
 
   return (
+    <> 
+    <Navbar/>
     <div className="bg-gray-50 mt-20 min-h-screen">
       {/* Main Article Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
@@ -39,7 +42,7 @@ const ChampionArticlePage = () => {
               {/* Author Image */}
               <div className="relative w-32 h-40 mx-auto mb-6 bg-gray-200 rounded overflow-hidden">
                 <Image
-                  src="/images/par1.webp"
+                  src="/images/par1.jpg"
                   alt="Baroness Smith of Llanfaes"
                   fill
                   className="object-cover object-center"
@@ -233,6 +236,8 @@ const ChampionArticlePage = () => {
       
     
     </div>
+    <Footer/>
+    </>
   );
 };
 

@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-
+import Navbar from "@/components/newNavbar";
+import Footer from "@/components/newFooter";
 function StatBox({ number, label }) {
   return (
     <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-8 text-center transition-all hover:bg-white/10 hover:border-white/20 hover:shadow-lg">
@@ -73,7 +74,10 @@ export default function DigitalLeadershipPage() {
   };
 
   return (
+    
+
     <div className="bg-white">
+        <Navbar />
       {/* Hero Section */}
       <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-gray-900 to-indigo-900">
         <div className="relative w-full max-w-4xl h-96 rounded-2xl overflow-hidden shadow-2xl group">
@@ -572,6 +576,7 @@ export default function DigitalLeadershipPage() {
           </motion.div>
         </form>
       </motion.div>
+      <Footer />
     </div>
   );
 }

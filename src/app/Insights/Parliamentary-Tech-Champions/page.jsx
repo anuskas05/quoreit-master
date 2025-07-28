@@ -9,7 +9,7 @@ const ParliamentaryTechChampions = () => {
       id: 1,
       name: "Baroness Smith of Llanfaes",
       title: "Women and girls deserve the chance to thrive and become leaders in STEM, it is our responsibility to make sure that they have the tools and support they need to do so",
-      image: "/images/par1.webp",
+      image: "/images/par1.jpg",
       link: "/Insights/Parliamentary-Tech-Champions/Baroness-smith-of-llanfaes"
     },
     {

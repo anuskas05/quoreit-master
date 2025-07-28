@@ -18,11 +18,11 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { label: 'What we do', href: '#' },
-    { label: 'About us', href: '#' },
-    { label: 'Our Brands', href: '#' },
-    { label: 'Work for us', href: '#' },
-    { label: 'Newsroom', href: '#' }
+    { label: 'What we do', href: '/Quick-Links/What-we-do' },
+    { label: 'About us', href: '/Quick-Links/About-us' },
+    { label: 'Our Brands', href: '/Quick-Links/Our-Brands' },
+    { label: 'Work for us', href: '/Quick-Links/Work-for-us' },
+    { label: 'Newsroom', href: '/Quick-Links/Newsroom' }
   ];
 
   return (
@@ -72,17 +72,54 @@ const Navbar = () => {
                 
                 {/* Dropdown Menu */}
                 {isInsightsOpen && (
-                  <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
-                    <Link href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                      Articles
-                    </Link >
-                    <Link href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                      Reports
-                    </Link>
-                    <Link href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                      Whitepapers
-                    </Link >
-                  </div>
+                   <ul className="absolute right-0 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-50">
+  <li>
+    <Link href="/Insights/Tech-Talks" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+      Tech Talks
+    </Link>
+  </li>
+  <li>
+    <Link href="/Insights/Digital-Leadership-Report-2025" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+      Digital Leadership Report 2025
+    </Link>
+  </li>
+  <li>
+    <Link href="/Insights/Diversity-Inclusion" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+      Diversity & Inclusion
+    </Link>
+  </li>
+  <li>
+    <Link href="/Insights/Women-in-Tech" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+      Women in Tech
+    </Link>
+  </li>
+  <li>
+    <Link href="/Insights/Cybersecurity" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+      Cybersecurity
+    </Link>
+  </li>
+  <li>
+    <Link href="/Insights/Comment-Analysis" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+      Comment & Analysis
+    </Link>
+  </li>
+  <li>
+    <Link href="/Insights/Blogs" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+      Blogs
+    </Link>
+  </li>
+  <li>
+    <Link href="/Insights/Tech-Flix" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+      Tech Flix
+    </Link>
+  </li>
+  <li>
+    <Link href="/Insights/Parliamentary-Tech-Champions" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+      Parliamentary Tech Champions
+    </Link>
+  </li>
+</ul>
+
                 )}
               </div>
             </div>

@@ -63,10 +63,10 @@ export default function Footer2() {
       {/* Bottom Bar */}
       <div className="border-t border-white/20 mt-10 pt-6 text-sm flex flex-col md:flex-row justify-between items-center gap-3">
         <div className="flex gap-6 flex-wrap justify-center">
-          <Link href="#">Privacy Policy</Link>
-          <Link href="#">Cookies</Link>
-          <Link href="#">Accessibility Statement</Link>
-          <Link href="#">Modern Slavery</Link>
+          <Link href="/Policies/Privacy-Policy">Privacy Policy</Link>
+          <Link href="/Policies/Cookies-Legal">Cookies</Link>
+          <Link href="/Policies/Modern-Slavery-Statement">Accessibility Statement</Link>
+          <Link href="/Policies/Modern-Slavery-Statement">Modern Slavery</Link>
         </div>
         <div className="text-white/70 mt-2 md:mt-0">&copy; {new Date().getFullYear()} QuoreIT</div>
       </div>
