@@ -65,7 +65,7 @@ export default function Footer2() {
         <div className="flex gap-6 flex-wrap justify-center">
           <Link href="/Policies/Privacy-Policy">Privacy Policy</Link>
           <Link href="/Policies/Cookies-Legal">Cookies</Link>
-          <Link href="/Policies/Modern-Slavery-Statement">Accessibility Statement</Link>
+          <Link href="/Policies/Accessibility-statement">Accessibility Statement</Link>
           <Link href="/Policies/Modern-Slavery-Statement">Modern Slavery</Link>
         </div>
         <div className="text-white/70 mt-2 md:mt-0">&copy; {new Date().getFullYear()} QuoreIT</div>
