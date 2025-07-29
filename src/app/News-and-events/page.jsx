@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
+  import Head from 'next/head';
 const NewsEvent = () => {
   const cards = [
     {
@@ -66,6 +66,23 @@ const NewsEvent = () => {
 
   return (
     <>
+    <Head>
+  <title>News & Events | Harvey Nash Group Updates and Announcements</title>
+  <meta name="description" content="Stay updated with the latest news and events from Harvey Nash Group, including executive announcements, awards, and global initiatives." />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="News & Events | Harvey Nash Group Updates and Announcements" />
+  <meta property="og:description" content="Discover the latest from Harvey Nash Group – from industry awards and leadership changes to tech talent insights and diversity efforts." />
+  <meta property="og:image" content="/images/news.webp" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/News-and-events" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="News & Events | Harvey Nash Group Updates and Announcements" />
+  <meta name="twitter:description" content="Read the latest updates from Harvey Nash Group. Explore leadership news, awards, initiatives, and global tech market trends." />
+  <meta name="twitter:image" content="/images/news.webp" />
+</Head>
       <section className="relative h-96 flex items-center justify-center overflow-hidden mt-20">
         <div className="absolute inset-0 z-0">
           <Image

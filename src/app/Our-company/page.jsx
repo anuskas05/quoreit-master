@@ -1,5 +1,5 @@
  "use client";
-
+  import Head from 'next/head';
 import { useState } from "react";
 // import Navbar from "@/components/Navbar";
 // import Footer from "@/components/Footer";
@@ -1208,6 +1208,23 @@ const OurCompany = () => {
   return (
     <>
     {/* <Navbar/> */}
+    <Head>
+  <title>About Our Company | Quore IT - Global Talent & Tech Solutions</title>
+  <meta name="description" content="Discover Quore IT – a global leader in technology recruitment, outsourcing, and leadership services. Learn about our mission, values, and social responsibility." />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="About Our Company | Quore IT - Global Talent & Tech Solutions" />
+  <meta property="og:description" content="Explore our company overview, values, financials, CSR, diversity efforts, and environmental initiatives as part of Nash Squared." />
+  <meta property="og:image" content="/images/overview.jpg" />  {/* Replace with a representative hero image if available */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/Our-company" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Our Company | Quore IT - Global Talent & Tech Solutions" />
+  <meta name="twitter:description" content="Get to know Quore IT’s vision, values, and global reach. Learn about our commitment to diversity, sustainability, and ethical practices." />
+  <meta name="twitter:image" content="/images/overview.jpg" />  {/* Match the og:image */}
+</Head>
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">

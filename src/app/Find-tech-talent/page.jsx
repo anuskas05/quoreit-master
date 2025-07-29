@@ -1,5 +1,5 @@
 'use client';
-
+  import Head from 'next/head';
 import React from 'react';
 import Image from 'next/image';
 import { useForm } from "react-hook-form";
@@ -35,7 +35,23 @@ const TechTalent = () => {
   };
   return (
     <>
-    
+    <Head>
+  <title>Hire Top Tech Talent | Build Your Dream Tech Team</title>
+  <meta name="description" content="Looking to hire developers, engineers, or IT professionals? Share your requirements and let us connect you with top-tier tech talent globally." />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Hire Top Tech Talent | Build Your Dream Tech Team" />
+  <meta property="og:description" content="We help companies hire highly skilled developers and engineers. Fill out the form to get matched with vetted tech talent." />
+  <meta property="og:image" content="/images/talent_hero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/tech-talent" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hire Top Tech Talent | Build Your Dream Tech Team" />
+  <meta name="twitter:description" content="Share your tech hiring needs and let us help you recruit the best global developers and engineers." />
+  <meta name="twitter:image" content="/images/talent_hero.jpg" />
+</Head>
     <section className="relative h-96 flex items-center justify-center overflow-hidden mt-25">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">

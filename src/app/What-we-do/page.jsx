@@ -1,5 +1,5 @@
  'use client';
-
+  import Head from 'next/head';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,6 +14,23 @@ const WhatWeDo = () => {
 
   return (
     <>
+    <Head>
+  <title>What We Do | Quore IT - Technology Recruitment & Workforce Solutions</title>
+  <meta name="description" content="Explore how Quore IT connects businesses to tech talent worldwide. From recruitment to workforce solutions, we help drive digital transformation." />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="What We Do | Quore IT - Technology Recruitment & Workforce Solutions" />
+  <meta property="og:description" content="We deliver global technology recruitment and workforce solutions to organizations in over 30 countries. Learn more about how we can help you scale." />
+  <meta property="og:image" content="/images/what-we-do.webp" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/What-we-do" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What We Do | Quore IT - Technology Recruitment & Workforce Solutions" />
+  <meta name="twitter:description" content="Quore IT specializes in global tech recruitment and customized workforce solutions. Find your local recruitment partner today." />
+  <meta name="twitter:image" content="/images/what-we-do.webp" />
+</Head>
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden mt-20">
         {/* Background Image */}

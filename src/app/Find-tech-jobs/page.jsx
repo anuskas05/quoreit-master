@@ -1,7 +1,7 @@
 // pages/find-job.jsx
 
 "use client";
-
+   import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
 // import { Link } from 'react-router-dom';
@@ -11,6 +11,25 @@ const FindJob = () => {
   return (
 
      <> 
+   
+
+<Head>
+  <title>Find a Tech Job | Explore Global Opportunities</title>
+  <meta name="description" content="Looking for your next tech career move? Find permanent, contract, and board-level opportunities across the USA, UK, Germany, and more." />
+  
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Find a Tech Job | Explore Global Opportunities" />
+  <meta property="og:description" content="Take the next step in your career. Explore tech job opportunities in the USA, UK, Germany, and beyond with board-level and remote roles." />
+  <meta property="og:image" content="/images/jobs_hero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/find-job" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Find a Tech Job | Explore Global Opportunities" />
+  <meta name="twitter:description" content="Discover the best tech roles tailored to your skills—remote, permanent, or interim. Get in touch with top recruiters." />
+  <meta name="twitter:image" content="/images/jobs_hero.jpg" />
+</Head>
           <section className="relative h-96 flex items-center justify-center overflow-hidden mt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
