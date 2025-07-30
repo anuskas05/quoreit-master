@@ -7,6 +7,75 @@ import { motion } from 'framer-motion';
 // import { Link } from 'react-router-dom';
  import Image from 'next/image';
 import { Home } from 'lucide-react';
+ 
+const services = [
+  {
+    title: 'Government Services',
+    description:
+      'Understanding how to efficiently navigate regulated and compliance-driven environments allows us to move as quickly and precisely as the project demands.',
+    image: '/images/pics1.png',
+    link: '/services/government',
+  },
+  {
+    title: 'Information Technology',
+    description:
+      'There’s no room for error in a world of constantly changing technology. Our experts stay on top of the latest developments in their specialties so they know where to focus, and why.',
+    image: '/images/pics2.png',
+    link: ' Find-tech-jobs/Information-technology',
+  },
+  {
+    title: 'Engineering',
+    description:
+      'Deep expertise doesn’t mean blinders are on. We onboard team members who have a sense of where they fit in within the larger mission.',
+    image: '/images/pics3.png',
+    link: '/services/engineering',
+  },
+  {
+    title: 'Consulting Services',
+    description:
+      'Understanding how a skill fits in to a larger mechanism is the mark of a true expert. Our specialists understand the bigger picture, and help our clients do the same.',
+    image: '/images/pics4.png',
+    link: '/services/consulting',
+  },
+];
+const topLogos = [
+  'carmax.png',
+  'dominion.png',
+  'geico.png',
+  'honda.png',
+  'kemper.png',
+  'mercedes.png',
+  'motion.png',
+  'southern.png',
+  'truist.png',
+   'sca.png',
+  'accenture.png',
+];
+
+const bottomLogos = [
+  'sca.png',
+  'accenture.png',
+  'southern.png',
+  'truist.png',
+  'carmax.png',
+  'dominion.png',
+  'geico.png',
+  'honda.png',
+  'kemper.png',
+  'mercedes.png',
+  'motion.png',
+];
+
+
+const industries = [
+  { name: 'AUTOMOTIVE', image: 'automotive.png' },
+  { name: 'FINANCIAL', image: 'FinancialServices.png' },
+  { name: 'GOVERNMENT', image: 'Government.png' },
+  { name: 'HEALTHCARE', image: 'Healthcare.png' },
+  { name: 'RETAIL', image: 'Retail.png' },
+  { name: 'UTILITIES', image: 'Utilities.png' },
+  { name: 'MANUFACTURING', image: 'Manufacturing.png' },
+];
  const cards = [
     {
       id: 'card1',
@@ -115,93 +184,169 @@ const Firstpage = () => {
     </div>
   </div>
 </section>
-<section className="bg-gray-50 py-16 px-4 md:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-16">
-        {/* Text Content */}
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">
-            Our Company
-          </h2>
-          <p className="text-gray-700 text-justify mb-4">
-            Established in 1988, Harvey Nash has supported many of the world&apos;s leading
-            organisations to recruit, source and manage the highly skilled talent they need to
-            succeed in an increasingly competitive and technology driven world.
-          </p>
-          <p className="text-gray-700  text-justify mb-4">
-            We work with clients, both large and small, to deliver a portfolio of services:
-            technology recruitment, IT outsourcing and leadership services.
-          </p>
-          <a href="#" className="text-blue-600 underline hover:text-blue-800 transition">
-            Learn more about What we do
-          </a>
-        </motion.div>
+ <section className="bg-gray-50 py-16 px-4 md:px-12 lg:px-24">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-16">
+    {/* Text Content */}
+    <motion.div
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4 text-center md:text-left">
+        When you’re solving a business need,<br />
+        you don’t need one right answer.
+      </h2>
+      <p className="text-4xl md:text-5xl font-extrabold  bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] bg-clip-text text-transparent mb-6 text-center md:text-left">
+        You need three.
+      </p>
+      <p className="text-gray-700 mb-4 text-justify">
+        Seneca Resources looks beyond the reqs you need to fill, to grasp exactly what you’re
+        trying to achieve. Because understanding your business needs helps us better meet your
+        resourcing ones.
+      </p>
+    </motion.div>
 
-        {/* Image */}
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <Image
-            src="/images/laptop_globe.webp"
-            alt="Laptop with globe overlay"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-md"
-          />
-        </motion.div>
+    {/* Image */}
+    <motion.div
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      <Image
+        src="/images/laptop_globe.webp"
+        alt="Laptop with globe overlay"
+        width={600}
+        height={400}
+        className="rounded-lg shadow-md"
+      />
+    </motion.div>
+  </div>
+
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    {/* Image */}
+    <motion.div
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      <Image
+        src="/images/business-contract.webp"
+        alt="Business handshake over contract"
+        width={600}
+        height={400}
+        className="rounded-lg shadow-md"
+      />
+    </motion.div>
+
+    {/* Text Content */}
+    <motion.div
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-4 text-center md:text-left">
+        We call it deploying with purpose.
+      </h2>
+      <p className="text-3xl md:text-4xl font-extrabold  bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] bg-clip-text text-transparent mb-4 text-center md:text-left">
+        You’ll call it just what<br className="hidden md:block" /> your business needs.
+      </p>
+    </motion.div>
+  </div>
+</section>
+  <section className="relative bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] text-white py-20 overflow-hidden">
+
+      {/* TOP SLIDER (right to left) */}
+      <div className="overflow-hidden mb-12">
+        <div className="flex gap-8 whitespace-nowrap animate-scroll-left">
+          {[...topLogos, ...topLogos].map((logo, idx) => (
+            <Image
+              key={`top-${idx}`}
+              src={`/images/${logo}`}
+              alt={`Top Logo ${idx}`}
+              width={100}
+              height={60}
+              className="h-10 w-auto object-contain"
+            />
+          ))}
+        </div>
       </div>
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Image */}
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <Image
-            src="/images/business-contract.webp"
-            alt="Business handshake over contract"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-md"
-          />
-        </motion.div>
+      {/* CENTER TEXT */}
+      <div className="relative z-10 max-w-5xl mx-auto text-center px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-orange-400 mb-4">
+          Resourcing and staffing that’s trusted<br />
+          from Main Street to Wall Street
+        </h2>
+        <p className="text-sm md:text-base text-black max-w-2xl mx-auto">
+          From small businesses to the Fortune 100, organizations across the country leverage
+          Seneca Resources’ workforce solutions expertise to fulfill their critical IT and Engineering projects.
+        </p>
+      </div>
 
-        {/* Text Content */}
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">
-            Our Global Reach
-          </h2>
-          <p className="text-gray-700 mb-4">
-            Harvey Nash is part of{' '}
-            <a href="#" className="text-blue-600 text-justify underline hover:text-blue-800 transition">
-              Nash Squared
-            </a>
-            , the leading global provider of talent and technology solutions.
-          </p>
-          <p className="text-gray-700  text-justify mb-4">
-            With over 3,000 employees in 36 locations across the USA, Europe and Asia-Pacific the
-            Company has the reach and resources of a global organisation, whilst fostering a culture
-            of innovation and agility that empowers its people to respond to constantly changing
-            client needs.
-          </p>
-          <a href="#" className="text-blue-600 underline hover:text-blue-800 transition">
-            Find out more about Our Company
-          </a>
-        </motion.div>
+      {/* BOTTOM SLIDER (left to right) */}
+      <div className="overflow-hidden mt-12">
+        <div className="flex gap-8 whitespace-nowrap animate-scroll-right">
+          {[...bottomLogos, ...bottomLogos].map((logo, idx) => (
+            <Image
+              key={`bottom-${idx}`}
+              src={`/images/${logo}`}
+              alt={`Bottom Logo ${idx}`}
+              width={100}
+              height={60}
+              className="h-10 w-auto object-contain"
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+ <section className="bg-[#f8f9fb] py-16 px-4">
+      <h2 className="text-center text-3xl font-bold  bg-gradient-to-br from-[#c5f82a] to-[#00d9a6] text-transparent bg-clip-text mb-12">
+        Industries Served
+      </h2>
+      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8 justify-items-center">
+        {industries.map((industry) => (
+          <div key={industry.name} className="flex flex-col items-center text-center">
+            <Image
+              src={`/images/${industry.image}`}
+              alt={industry.name}
+              width={60}
+              height={60}
+              className="mb-3"
+            />
+            <p className={`text-sm font-semibold text-[#0a2540] uppercase tracking-wide`}>
+              {industry.name}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+   <section className="bg-gray-50 py-16 px-4 md:px-12 lg:px-24">
+      <div className="max-w-4xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+        {services.map((service, idx) => (
+          <div key={idx} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+            <Image
+              src={service.image}
+              alt={service.title}
+              width={700}
+              height={400}
+              className="w-full h-56 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
+              <p className="text-gray-600 mb-4 text-sm">{service.description}</p>
+              <Link href={service.link}>
+                <span className="inline-block bg-orange-500 text-white text-sm font-semibold px-5 py-2 rounded hover:bg-orange-600 transition">
+                  LEARN MORE →
+                </span>
+              </Link>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
       <div className="w-full bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white px-6 py-12 mt-12">

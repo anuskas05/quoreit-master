@@ -98,7 +98,7 @@ export default function Footer() {
   <h1 className="text-3xl font-bold text-white">QuoreIT</h1>
 </div>
           <p className="text-lg text-[#00d9a6] font-medium">
-            <Link href="#" className="underline hover:text-white">Powered</Link>{" "}
+            <Link href="/DigitalLeadershipBanner" className="underline hover:text-white">Powered</Link>{" "}
             <span>by</span>{" "}
             <Link href="#" className="underline hover:text-white">QuoreIT</Link>
           </p>

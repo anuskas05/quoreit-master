@@ -30,7 +30,8 @@ export default function RootLayout({ children }) {
     "/Insights/Blogs",
     "/Insights/Tech-Flix",
     "/Insights/Parliamentary-Tech-Champions",
-    "/Insights/Parliamentary-Tech-Champions/Baroness-smith-of-llanfaes"
+    "/Insights/Parliamentary-Tech-Champions/Baroness-smith-of-llanfaes",
+    "/DigitalLeadershipBanner"
   ];
 
   const hideLayout = hiddenPaths.some((path) => pathname?.startsWith(path));
