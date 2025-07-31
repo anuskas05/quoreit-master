@@ -1,441 +1,970 @@
  import React from 'react';
-import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
 
-const ITSolutionsHero = () => {
+const SenecaServicesPage = () => {
+      const services = [
+   
+    {
+      id: 'cloud-consulting',
+      title: 'Cloud Consulting',
+      description: 'Whether an organization is looking to build, move or store their data, Seneca\'s cloud engineers are well versed in the development of cloud infrastructures and data migrations.',
+      image: '/images/it13.png',
+      alt: 'Team of professionals collaborating on cloud computing solutions',
+      reverse: false
+    },
+    {
+      id: 'data-science',
+      title: 'Data Science Consulting',
+      description: 'Our teams are fluent in Machine Learning, Artificial Intelligence, and Deep Learning technologies to meet your most pressing analytics needs. We\'ll partner with you to interrogate your data and find crucial business insights.',
+      image: '/images/it14.png',
+      alt: 'Data science team analyzing information on tablets and devices',
+      reverse: true
+    },
+    {
+      id: 'app-mobile',
+      title: 'App/Mobile Development',
+      description: 'We\'re fluent in the intricacies of all major mobile OS platforms as well as the latest dev tools and APKs. This means you can leverage the unique features of any mobile device or OS to your advantage.',
+      image: '/images/it15.png',
+      alt: 'Development team working on mobile applications',
+      reverse: false
+    },
+    {
+      id: 'agile-training',
+      title: 'Agile Training',
+      description: 'Our engineers help organizations Design, Develop, Deploy and Operate mission critical IT systems through organizational collaboration and continuous enhancements to IT systems and applications.',
+      image: '/images/it16.png',
+      alt: 'Team members participating in agile training and collaboration',
+      reverse: true
+    }
+  ];
   return (
     <>
       <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+        <title>Seneca Resources - Expert IT Services & Recruitment Solutions</title>
+        <meta 
+          name="description" 
+          content="From small business to Fortune 100. Seneca Resources provides expert IT services, government solutions, engineering, and consulting services. Trusted by winning teams nationwide." 
+        />
+         <meta
+          property="og:image"
+          content="/" 
+        />
+        <meta name="keywords" content="IT services, government services, engineering, consulting, technology solutions, recruitment, DevOps, cybersecurity, cloud solutions" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://yourdomain.com/services" />
+        
+        
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-900 to-indigo-800 text-white flex items-center justify-center p-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
-          <div className="order-2 lg:order-1">
-            <div className="inline-block bg-blue-600 bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full mb-8 border border-blue-300 border-opacity-30">
-              <span className="text-blue-200 text-sm font-medium tracking-wider">TRUSTED BY FORTUNE 500 COMPANIES</span>
+      <main className="min-h-screen bg-gray-50 ">
+        {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-[#c5f82a] to-[#00d9a6] mt-18 to-cyan-500 overflow-hidden">           
+  {/* Background Pattern */}           
+  <div className="absolute inset-0 opacity-10">             
+    <div className="absolute inset-0" style={{               
+      backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,             
+    }} />           
+  </div>                      
+
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">             
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">               
+      {/* Left Content */}               
+      <div className="text-white space-y-6 lg:space-y-8">                 
+        <div className="space-y-4">                   
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">                     
+            People who know,{' '}                     
+            <span className="text-[#00d9a6] block">know Seneca.</span>                   
+          </h1>                 
+        </div>                                  
+
+        <div className="space-y-4 lg:space-y-6 text-lg sm:text-xl lg:text-2xl">                   
+          <p className="font-medium">From small business to Fortune 100.</p>                   
+          <p className="font-medium">Public sector to private enterprise.</p>                   
+          <p className="leading-relaxed">                     
+            When it comes to highly skilled services and best-in-class                      
+            solutions, winning teams know they can count on Seneca                      
+            Resources.                   
+          </p>                   
+          <p className="leading-relaxed">                     
+            Our clients see results because we seek out exactly the right fit                      
+            for every situation. It's precision resourcing, and it can                      
+            transform your business.                   
+          </p>                 
+        </div>               
+      </div>                
+
+      {/* Right Image - Enhanced */}               
+      <div className="relative group">
+        {/* Floating background decorations */}
+        <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-green-400 to-pink-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-8 -left-8 w-96 h-96 bg-gradient-to-tr from-cyan-400 to-blue-500 rounded-full opacity-15 blur-3xl"></div>
+        
+        {/* Main image container */}
+        <div className="relative transform transition-all duration-500 group-hover:scale-105 group-hover:-rotate-1">
+          {/* Glassmorphism backdrop */}
+          <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-3xl border border-white/20 shadow-2xl"></div>
+          
+          {/* Image wrapper with enhanced styling */}
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-white via-gray-50 to-gray-100 p-6 transform transition-all duration-300">
+            {/* Inner glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-green-500/20 rounded-3xl"></div>
+            
+            {/* Actual image */}
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <Image                     
+                src="/images/it1.png"                     
+                alt="Professional business team handshake in modern office setting"                     
+                width={600}                     
+                height={400}                     
+                className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"                     
+                priority                     
+                loading="eager"                   
+              />
+              
+              {/* Overlay gradient for depth */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
-              <span className="block text-blue-300">Seamless Operations,</span>
-              <span className="block text-white">Robust Security:</span>
-              <span className="block text-blue-200">Meet our cutting edge</span>
-              <span className="block text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
-                IT Solutions.
-              </span>
-            </h1>
-            
-            <p className="text-xl text-blue-100 mb-10">
-              Transforming businesses with innovative technology solutions designed for performance, security, and scalability.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-lg font-medium text-white transition-all duration-300 transform hover:scale-105 shadow-lg shadow-cyan-500/30 flex items-center">
-                Get Started
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </button>
+            {/* Decorative corner elements */}
+            <div className="absolute top-2 right-2 w-4 h-4 bg-green-400 rounded-full opacity-70"></div>
+            <div className="absolute bottom-2 left-2 w-3 h-3 bg-cyan-400 rounded-full opacity-70"></div>
+          </div>
+          
+          {/* Additional floating elements */}
+          <div className="absolute -top-2 left-1/4 w-6 h-6 bg-gradient-to-r from-green-400 to-pink-500 rounded-full opacity-60 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute -bottom-3 right-1/3 w-4 h-4 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-60 animate-bounce" style={{ animationDelay: '1s' }}></div>
+        </div>
+      </div>             
+    </div>           
+  </div>         
+</section>
+
+      {/* Services Grid Section */}
+<section className="py-12 lg:py-20 bg-gray-100">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+      {/* Government Services */}
+      <article className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+        <div className="text-center space-y-6 flex-grow flex flex-col">
+          <div className="w-16 h-16 mx-auto bg-orange-100 rounded-lg flex items-center justify-center">
+            <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+            </svg>
+          </div>
+          
+          <h2 className="text-xl lg:text-2xl font-bold text-gray-900">
+            Government Services
+          </h2>
+          
+          <p className="text-gray-600 leading-relaxed text-sm lg:text-base flex-grow">
+            Understanding how to efficiently navigate regulated and compliance-driven government 
+            environments allows us to move as quickly and precisely and precisely to meet your staffing and 
+            recruiting needs as the project demands.
+          </p>
+          
+          <Link 
+            href="/services/government-services"
+            className="inline-flex items-center px-6 py-3 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 mt-auto"
+            aria-label="Learn more about Government Services"
+          >
+            LEARN MORE
+            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </article>
+
+      {/* Information Technology */}
+      <article className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+        <div className="text-center space-y-6 flex-grow flex flex-col">
+          <div className="w-16 h-16 mx-auto bg-orange-100 rounded-lg flex items-center justify-center">
+            <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 3H4c-1.1 0-2 .9-2 2v11c0 1.1 .9 2 2 2h3l-1 1v1h12v-1l-1-1h3c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 13H4V5h16v11z"/>
+            </svg>
+          </div>
+          
+          <h2 className="text-xl lg:text-2xl font-bold text-gray-900">
+            Information Technology
+          </h2>
+          
+          <p className="text-gray-600 leading-relaxed text-sm lg:text-base flex-grow">
+            There's no room for error in a world of constantly changing technology. From development to AI, 
+            our expert IT recruiters stay on top of the latest developments in their specialties so they know 
+            where to focus, and why.
+          </p>
+          
+          <Link 
+            href="/services/information-technology"
+            className="inline-flex items-center px-6 py-3 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 mt-auto"
+            aria-label="Learn more about Information Technology Services"
+          >
+            LEARN MORE
+            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </article>
+
+      {/* Engineering */}
+      <article className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+        <div className="text-center space-y-6 flex-grow flex flex-col">
+          <div className="w-16 h-16 mx-auto bg-orange-100 rounded-lg flex items-center justify-center">
+            <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          
+          <h2 className="text-xl lg:text-2xl font-bold text-gray-900">
+            Engineering
+          </h2>
+          
+          <p className="text-gray-600 leading-relaxed text-sm lg:text-base flex-grow">
+            When it comes to recruiting the best engineers, deep expertise doesn't mean blinders are on. We 
+            onboard team members who have a sense of where they fit in within the larger mission.
+          </p>
+          
+          <Link 
+            href="/services/engineering"
+            className="inline-flex items-center px-6 py-3 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 mt-auto"
+            aria-label="Learn more about Engineering Services"
+          >
+            LEARN MORE
+            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </article>
+
+      {/* Consulting Services */}
+      <article className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+        <div className="text-center space-y-6 flex-grow flex flex-col">
+          <div className="w-16 h-16 mx-auto bg-orange-100 rounded-lg flex items-center justify-center">
+            <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1 .9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+            </svg>
+          </div>
+          
+          <h2 className="text-xl lg:text-2xl font-bold text-gray-900">
+            Consulting Services
+          </h2>
+          
+          <p className="text-gray-600 leading-relaxed text-sm lg:text-base flex-grow">
+            Understanding how a skill fits in to a larger mechanism is the mark of a true expert. Our 
+            specialists understand the bigger picture, and help our clients do the same.
+          </p>
+          
+          <Link 
+            href="/services/consulting-services"
+            className="inline-flex items-center px-6 py-3 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 mt-auto"
+            aria-label="Learn more about Consulting Services"
+          >
+            LEARN MORE
+            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+        {/* Information Technology Recruiting Section */}
+        <section className="py-12 lg:py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12 lg:mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent mb-6">
+                Information Technology Recruiting
+              </h2>
+              <p className="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                Between shifting technologies on one side and ever-evolving threats on the other, 
+                organizations are stretched by today's business climate. Today's IT recruiting needs 
+                require expertise across all of IT, from web and data security to cybersec. That's why 
+                we've become the trusted IT recruitment agency for top CIOs nationwide.
+              </p>
+            </div>
+
+            {/* DevOps Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+              <div className="relative order-2 lg:order-1">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it2.png"
+                    alt="DevOps team collaboration in modern tech environment"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              
+              <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">DevOps</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  With a DevOps culture well-versed in Agile, as well as the latest advancements in software and 
+                  security, we supercharge tech teams through deep collaboration, and continually enhance IT systems 
+                  and applications. That means maximum efficiency as we design, develop, deploy and operate mission 
+                  critical IT systems.
+                </p>
+                <Link 
+                  href="/services/devops"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                  aria-label="Get started with DevOps services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
+        </section>
 
-          {/* Right Image */}
-          <div className="order-1 lg:order-2 relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-300/20">
-              <Image 
-                src="/images/the-meeting-of-two-business-people.png" 
-                alt="Business professionals meeting"
-                width={600}
-                height={600}
-                className="object-cover w-full h-auto"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent"></div>
-            </div>
-            
-            {/* Floating card */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl w-64">
-              <div className="flex items-center">
-                <div className="bg-blue-100 p-3 rounded-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        {/* Cybersecurity & Cloud Sections */}
+        <section className="py-12 lg:py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 lg:space-y-24">
+            {/* Cybersecurity */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+              <div className="space-y-6 lg:space-y-8">
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">Cybersecurity</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Risk assessments. Security architecture. Intrusion detection. Network monitoring. In today's security 
+                  environment you need to be protected in every direction. Seneca delivers, providing the expertise 
+                  you need to safeguard your data and prevent, detect, and respond to cyber threats quickly and 
+                  effectively.
+                </p>
+                <Link 
+                  href="/services/cybersecurity"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                  aria-label="Get started with Cybersecurity services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
+                </Link>
+              </div>
+              
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it3.png"
+                    alt="Cybersecurity professionals monitoring network security"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
                 </div>
-                <div className="ml-3">
-                  <p className="text-gray-800 font-bold">24/7 Support</p>
-                  <p className="text-gray-600 text-sm">Dedicated team always ready</p>
+              </div>
+            </div>
+
+            {/* Cloud */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+              <div className="relative order-2 lg:order-1">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it4.png"
+                    alt="Cloud infrastructure engineers working in data center"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              
+              <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">Cloud</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  It seems Cloud infrastructures and data migrations get more complex by the day. On prem or off? 
+                  What about edge? What platform is best? Our engineers will help you make the most of AI, 
+                  storage, compute, supercomputing, or networking to enhance your multi-generational IT estate. If 
+                  your needs require building, moving or storing data in the Cloud, we've got your back.
+                </p>
+                <Link 
+                  href="/services/cloud"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                  aria-label="Get started with Cloud services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Enterprise & Infrastructure Sections */}
+        <section className="py-12 lg:py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 lg:space-y-24">
+            {/* Enterprise Resource Planning */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+              <div className="space-y-6 lg:space-y-8">
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
+                  Enterprise Resource Planning
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  The backbone of integrated business processes, ERP software enables organization to share data 
+                  across departments. Implemented well, it's like turbo fuel for your bottom line. We specialize in the 
+                  development, customization and implementation of SAP, Oracle, Microsoft, and Salesforce software 
+                  based in the cloud or locally.
+                </p>
+                <Link 
+                  href="/services/erp"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                  aria-label="Get started with ERP services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+              
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it5.png"
+                    alt="ERP specialists implementing enterprise solutions"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Infrastructure Engineering */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+              <div className="relative order-2 lg:order-1">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it6.png"
+                    alt="Infrastructure engineer monitoring network systems"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              
+              <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
+                  Infrastructure Engineering
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Infrastructure keeps your business running. So downtime is not an option. Our infrastructure 
+                  engineers are there 24/7, providing everything from desktop and server support to network 
+                  engineering. Whether you need a single skilled resource or a full team of engineers, Seneca 
+                  Resources can deploy proven resources at a moment's notice.
+                </p>
+                <Link 
+                  href="/services/infrastructure"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                  aria-label="Get started with Infrastructure Engineering services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+         <section className="py-12 lg:py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <div className="text-center mb-12 lg:mb-16">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent mb-6 lg:mb-8">
+                Engineering Recruitment Services
+              </h1>
+              <p className="text-lg lg:text-xl text-gray-700 max-w-5xl mx-auto leading-relaxed">
+                Maintaining high level performance in your operations takes a certain kind of talent - the right 
+                talent. From contract labor to outsourced solutions, Seneca Resources brings the experience to 
+                support a broad range of activities across the spectrum of engineering skill sets.
+              </p>
+            </div>
+
+            {/* Automotive Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+              <div className="relative order-2 lg:order-1">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it7.png"
+                    alt="Automotive engineer working with robotic manufacturing equipment in modern factory"
+                    width={600}
+                    height={450}
+                    className="w-full h-auto object-cover"
+                    priority
+                    loading="eager"
+                  />
+                </div>
+              </div>
+              
+              <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Automotive</h2>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Recruiting for automotive can be challenging - especially when it comes to rework. Luckily no one 
+                  knows the automotive space like Seneca. From process & manufacturing engineering to logistics, 
+                  skilled trades and even automation, we've got a deep bench of auto-minded professionals to keep 
+                  your project rolling.
+                </p>
+                <Link 
+                  href="/services/automotive"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105"
+                  aria-label="Get started with Automotive engineering services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Energy/Utility Staffing Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+              <div className="space-y-6 lg:space-y-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Energy/Utility Staffing</h2>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Far from being a sedate line of business, almost no sector is evolving as quickly as energy and utility. 
+                  Seneca is moving with it, deploying teams of specialist electrical engineers, PMs, technicians 
+                  and more to where they're needed most. We're fluent in legacy dynamics while staying abreast of 
+                  the latest twists and turns of this dynamic space.
+                </p>
+                <Link 
+                  href="/services/energy-utility"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105"
+                  aria-label="Get started with Energy/Utility staffing services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+              
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it8.png"
+                    alt="Energy utility engineers reviewing blueprints at construction site with industrial background"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
 
+        {/* Engineering Specialties Section */}
+        <section className="py-12 lg:py-20 bg-gradient-to-r from-[#c5f82a] to-[#00d9a6]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12 lg:mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 lg:mb-8">
+                We also provide crucial support to leading companies in the following areas:
+              </h2>
+            </div>
 
-      <div className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <div className="p-8 sm:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+              {/* Aerospace */}
+              <article className="bg-green-900/40 backdrop-blur-sm border border-green-700/30 rounded-2xl p-6 lg:p-8 hover:bg-green-800/50 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <h3 className="text-xl lg:text-2xl font-bold text-white-400 mb-4 lg:mb-6">AEROSPACE</h3>
+                <ul className="space-y-3 text-white">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Instrumentation Engineers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Controls</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Design Engineers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Fabrication Support</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Mechanical Engineers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Materials Management</span>
+                  </li>
+                </ul>
+              </article>
+
+              {/* Chemical/Petro */}
+              <article className="bg-green-900/40 backdrop-blur-sm border border-green-700/30 rounded-2xl p-6 lg:p-8 hover:bg-green-800/50 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <h3 className="text-xl lg:text-2xl font-bold text-white-400 mb-4 lg:mb-6">CHEMICAL/PETRO</h3>
+                <ul className="space-y-3 text-white">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Process/Manufacturing Engineers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Chemists/Lab Technician Support</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Chemical Engineer</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Environmental/Health/Safety Engineers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Nuclear Engineers</span>
+                  </li>
+                </ul>
+              </article>
+
+              {/* Logistics/Automation */}
+              <article className="bg-green-900/40 backdrop-blur-sm border border-green-700/30 rounded-2xl p-6 lg:p-8 hover:bg-green-800/50 transition-all duration-300 hover:scale-105 hover:shadow-xl md:col-span-2 lg:col-span-1">
+                <h3 className="text-xl lg:text-2xl font-bold text-white-400 mb-4 lg:mb-6">LOGISTICS/AUTOMATION</h3>
+                <ul className="space-y-3 text-white">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Field Service Engineers & Technicians</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Controls & Mechanical Engineers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Sales Engineers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>IT Service Managers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-white-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Project Managers</span>
+                  </li>
+                </ul>
+              </article>
+            </div>
+
+            <div className="text-center">
+              <Link 
+                href="/services/engineering-specialties"
+                className="inline-flex items-center px-10 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105 text-lg"
+                aria-label="Get started with engineering specialty services"
+              >
+                GET STARTED
+                <svg className="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Government Services Section */}
+      <section className="py-12 lg:py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <div className="text-center mb-12 lg:mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent mb-6 lg:mb-8">
+                Government Services
+              </h2>
+              <p className="text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
+                Understanding how to efficiently navigate regulated and compliance-driven government 
+                environments allows us to move quickly to meet your staffing and recruiting needs.
+              </p>
+              
               <div className="mb-8">
-                <p className="font-bold text-black text-3xl leading-relaxed mb-6">
-                  With a rich history of serving numerous clients nationwide across diverse industry verticals,
-                </p>
-                
-                <h2 className="text-3xl font-bold text-[#0066cc] mb-6">
-                  Seneca Resources is your trusted partner for comprehensive technology solutions.
-                </h2>
-                
-                <p className="text-black text-lg leading-relaxed mb-6">
-                  Our team boasts deep expertise in addressing real-world business challenges. So you can be sure that you've got the resources and support you need to thrive in today's fast-paced technology landscape.
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                  Proudly serving those <span className="text-green-500">who serve.</span>
+                </h3>
+                <p className="text-lg text-gray-600 max-w-5xl mx-auto leading-relaxed">
+                  Seneca is proud to be a provider of crucial recruitment support to the US government and 
+                  Department of Defense. We also work closely with countless agencies at local, state and federal 
+                  levels to develop specialized experience in Government solutions across IT, infrastructure, 
+                  engineering and more.
                 </p>
               </div>
               
-              <div className="border-t border-gray-200 pt-8">
-                <p className="text-black text-lg leading-relaxed">
-                  At Seneca Resources, we understand that modern businesses rely on systems, applications, and data like never before. Swift access, unwavering availability, and robust security are must have – they're fundamental to keeping your operations running seamlessly. That's why our teams tailor their approach to your project's unique requirements and objectives. We excel in delivering these critical components when and how you need them.
+              <p className="text-xl font-semibold text-gray-900 mb-12">
+                Some key areas of our expertise include:
+              </p>
+            </div>
+
+            {/* Defense & Intel Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+              <div className="relative order-2 lg:order-1">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it9.png"
+                    alt="Defense and intelligence team collaborating on government technology solutions"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              
+              <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">Defense & Intel</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Ranging from Enterprise IT to both Full Spectrum and Software Engineering, we're fluent across ERP 
+                  (SAP and Oracle), System Engineering & Admin, App Development, Data Analytics, Cloud 
+                  Computing and Cyber.
                 </p>
+                <Link 
+                  href="/services/defense-intel"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105"
+                  aria-label="Get started with Defense & Intel services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Federal Civilian, Homeland, & Justice Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+              <div className="space-y-6 lg:space-y-8">
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
+                  Federal Civilian, Homeland, & Justice
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  With a deep understanding of the IT and talent needs of large government organizations, Seneca 
+                  Resources is a proven partner delivering a wide variety of services and solutions to Fed Civilian, 
+                  DOH and DOJ customers, such as: Data Analysis, Cybersecurity, Application Development, Project 
+                  Management, ETL Engineering, Quality Assurance, etc.
+                </p>
+                <Link 
+                  href="/services/federal-civilian"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105"
+                  aria-label="Get started with Federal Civilian, Homeland & Justice services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+              
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it10.png"
+                    alt="Federal civilian employees working on homeland security and justice technology projects"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Federal Health Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+              <div className="relative order-2 lg:order-1">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it11.png"
+                    alt="Healthcare professional working with advanced medical technology and data systems"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              
+              <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">Federal Health</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  We provide support, planning, implementation, transitioning, operating and maintenance 
+                  expertise to keep health initiatives running smoothly. From maintaining CMS applications to 
+                  providing support Cloud Computing Services for Infrastructure as a Service (IaaS) and scalable 
+                  Cloud based Platform as a Service (PaaS) applications.
+                </p>
+                <Link 
+                  href="/services/federal-health"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105"
+                  aria-label="Get started with Federal Health services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* State, Local & Education Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+              <div className="space-y-6 lg:space-y-8">
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
+                  State, Local & Education
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Challenges are always evolving. So State & Local Government entities have to stay nimble. With over 
+                  30 years of deep public sector experience, Seneca Resources partners with numerous SLED 
+                  organizations to strengthen their capabilities in talent scalability, project/program management, 
+                  cybersecurity, data science, app development, and more.
+                </p>
+                <Link 
+                  href="/services/state-local-education"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105"
+                  aria-label="Get started with State, Local & Education services"
+                >
+                  GET STARTED
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+              
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/it12.png"
+                    alt="State and local government officials collaborating on education and community initiatives"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      
-
-      <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          {/* Header Section */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 uppercase tracking-tight">Advanced technologies. Expert Support.</h2>
-          </div>
-
-          {/* Two Column Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Left Column - Tech Solutions */}
-            <div className="bg-gradient-to-br from-blue-900 to-indigo-800 p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold text-white mb-6">Advanced Tech and Support</h3>
-              <ul className="space-y-4">
-                {[
-                  'Converged Infrastructure',
-                  'Micro Data Centers',
-                  'Data Analytics/Big Data',
-                  'Power & Cooling',
-                  'Server, Desktop & Printer Hardware',
-                  'SmartBunker*',
-                  'Virtualization',
-                  'Cloud Infrastructure',
-                  'Storage, Back-Up, & Recovery',
-                  'Network & Systems Monitoring'
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
-                    <svg className="h-5 w-5 text-white mt-0.5 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-white">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Right Column - Project Management */}
-            <div className="bg-gradient-to-br from-blue-900 to-indigo-800 p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold text-white mb-6">Project Management Design/Architecture</h3>
-              <ul className="space-y-4">
-                {[
-                  'Assessments',
-                  'Architecture & Design',
-                  'Implementation',
-                  'Configuration',
-                  'Data Migration',
-                  'Maintenance',
-                  'On-going Support'
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
-                    <svg className="h-5 w-5 text-white mt-0.5 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-white">{item}</span>
-                  </li>
-                ))}
-              </ul>
+        </section>
+          <section className="bg-white py-8 sm:py-12 lg:py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-4xl mx-auto">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mb-6">
+                When working with the government and their agencies, Seneca Resources assures that all 
+                employees are fully compliant with state and federal regulations, including{' '}
+                <Link 
+                  href="/section-508-compliance" 
+                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
+                  aria-label="Learn more about Section 508 compliance"
+                >
+                  Section 508 of the Rehabilitation Act
+                </Link>
+                {' '}which requires Federal agencies to make their electronic and information 
+                technology accessible to people with disabilities.
+              </p>
             </div>
           </div>
+        </section>
 
-         {/* Learn More Link */}
-        <div className="text-center mt-12">
-          <a href="/learn-more" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-600 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 border-blue-600">
-          LEARN MORE
-            <svg className="ml-3 -mr-1 h-5 w-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586  11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-         </svg>
-        </a>
-       </div>
-        </div>
-      </div>
-
-    <div className="py-12 bg-gray-50">  {/* Changed from bg-white to bg-gray-50 */}
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center">
-      <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-        Tech Partners
-      </h2>
-      <p className="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
-        In addition, Seneca Resources is a certified hardware, software, and maintenance Value-Added Reseller (VAR) for leading industry manufacturers. We proudly offer a comprehensive product portfolio designed to establish and maintain high-performance, uninterrupted availability and protection for your systems. Our esteemed technology partners include:
-      </p>
-    </div>
-
-    <div className="mt-12">
-      <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6">
-        {/* AWS */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/aws-logo.png" 
-              alt="AWS"
-              layout="fill"
-              objectFit="contain"
-            />
+        {/* Consulting Services Header */}
+        <section className="bg-gradient-to-r from-[#c5f82a] to-[#00d9a6] py-12 sm:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 sm:mb-8">
+              Consulting Services
+            </h1>
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed mb-8">
+              Understanding how a skill fits into a larger mechanism is the mark of a true expert. Our 
+              recruitment specialists understand the bigger picture, and help our clients do the same. With 
+              decades of combined experience across all phases of strategic planning, Seneca Consulting 
+              Services can help you see the road ahead.
+            </p>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+              Expertise in the key areas driving business today.
+            </h2>
           </div>
-        </div>
+        </section>
 
-        {/* Check Point */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/checkpoint-logo.png" 
-              alt="Check Point"
-              layout="fill"
-              objectFit="contain"
-            />
+        {/* Services Grid */}
+        <section className="py-12 sm:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="space-y-16 sm:space-y-20 lg:space-y-24">
+              {services.map((service, index) => (
+                <article 
+                  key={service.id}
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center ${
+                    service.reverse ? 'lg:grid-flow-col-dense' : ''
+                  }`}
+                >
+                  {/* Image Container */}
+                  <div className={`relative ${service.reverse ? 'lg:col-start-2' : ''}`}>
+                    <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
+                      <Image
+                        src={service.image}
+                        alt={service.alt}
+                        fill
+                        className="object-cover transition-transform duration-700 hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
+                        priority={index < 2}
+                        quality={85}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content Container */}
+                  <div className={`${service.reverse ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                    <div className="  p-6 sm:p-8 lg:p-10 h-full flex flex-col justify-center">
+                      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
+                        {service.title}
+                      </h2>
+                      <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed mb-6 sm:mb-8">
+                        {service.description}
+                      </p>
+                      <div className="mt-auto">
+                        <Link
+                          href={`/services/${service.id}`}
+                          className="inline-flex items-center bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-500/50"
+                          aria-label={`Learn more about ${service.title} services`}
+                        >
+                          GET STARTED
+                          <svg 
+                            className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
-        </div>
+        </section>
 
-        {/* Cisco */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/cisco-logo.png" 
-              alt="Cisco"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* Commvault */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/commvault-logo.png" 
-              alt="Commvault"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* Dell Technologies */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/dell-logo.png" 
-              alt="Dell Technologies"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* EMC */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/emc-logo.png" 
-              alt="EMC"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* Hitachi */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/hitachi-logo.png" 
-              alt="Hitachi"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* HPE */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/hpe-logo.png" 
-              alt="Hewlett Packard Enterprise"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* Information Builders */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/ib-logo.png" 
-              alt="Information Builders"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* Radian */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/radian-logo.png" 
-              alt="Radian"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* RSA */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/rsa-logo.png" 
-              alt="RSA"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* Schneider Electric */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/schneider-logo.png" 
-              alt="Schneider Electric"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* ServiceNow */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/servicenow-logo.png" 
-              alt="ServiceNow"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* Tenable */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/tenable-logo.png" 
-              alt="Tenable"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* Veracode */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/veracode-logo.png" 
-              alt="Veracode"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* VMware */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/vmware-logo.png" 
-              alt="VMware"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-
-        {/* Xerox */}
-        <div className="col-span-1 flex justify-center">
-          <div className="flex items-center justify-center h-24 w-full relative">
-            <Image 
-              src="/xerox-logo.png" 
-              alt="Xerox"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className="mt-12 text-center">
-      <p className="text-xl text-gray-600">
-        Backed by our expert team and industry-leading technology partners, we guarantee the efficiency and security of your IT environment. We deploy your technology solutions with purpose and precision, so you can focus on your core business: taking care of your customers.
-      </p>
-    </div>
-  </div>
-</div>
-   
-    <div className="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white min-h-[500px]">
-  <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-      {/* Image on the left */}
-      <div className="relative h-96 lg:h-full rounded-lg overflow-hidden shadow-xl">
-        <Image
-          src="/images/corporate-meeting.jpg"
-          alt="Corporate Meeting"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          priority
-          className="opacity-90"
-        />
-      </div>
-
-      {/* Content on the right */}
-      <div className="text-center lg:text-left bg-black/10 p-8 rounded-lg backdrop-blur-sm">
-        <h2 className="text-3xl font-extrabold sm:text-4xl mb-8">
-          To discover how Seneca Resources can<br />
-          address your specific IT requirements
-        </h2>
-        
-        <div className="mt-6 text-xl leading-8 space-y-4">
-          <p>contact us at <span className="font-semibold">info@senecahq.com</span></p>
-          <p>or call</p>
-          <p className="text-2xl font-bold">703-390-9099</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+       
+      </main>
     </>
   );
 };
 
-export default ITSolutionsHero;
+export default SenecaServicesPage;
