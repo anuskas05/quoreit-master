@@ -165,7 +165,7 @@ const SenecaServicesPage = () => {
           </p>
           
           <Link 
-            href="/services/government-services"
+            href="/Find-tech-jobs/government-services"
             className="inline-flex items-center px-6 py-3 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 mt-auto"
             aria-label="Learn more about Government Services"
           >
@@ -313,7 +313,7 @@ const SenecaServicesPage = () => {
                   critical IT systems.
                 </p>
                 <Link 
-                  href="/services/devops"
+                  href="/Find-tech-jobs/Information-technology"
                   className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                   aria-label="Get started with DevOps services"
                 >
@@ -484,94 +484,7 @@ const SenecaServicesPage = () => {
             </div>
           </div>
         </section>
-         <section className="py-12 lg:py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Header */}
-            <div className="text-center mb-12 lg:mb-16">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent mb-6 lg:mb-8">
-                Engineering Recruitment Services
-              </h1>
-              <p className="text-lg lg:text-xl text-gray-700 max-w-5xl mx-auto leading-relaxed">
-                Maintaining high level performance in your operations takes a certain kind of talent - the right 
-                talent. From contract labor to outsourced solutions, Seneca Resources brings the experience to 
-                support a broad range of activities across the spectrum of engineering skill sets.
-              </p>
-            </div>
-
-            {/* Automotive Section */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
-              <div className="relative order-2 lg:order-1">
-                <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                  <Image
-                    src="/images/it7.png"
-                    alt="Automotive engineer working with robotic manufacturing equipment in modern factory"
-                    width={600}
-                    height={450}
-                    className="w-full h-auto object-cover"
-                    priority
-                    loading="eager"
-                  />
-                </div>
-              </div>
-              
-              <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Automotive</h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Recruiting for automotive can be challenging - especially when it comes to rework. Luckily no one 
-                  knows the automotive space like Seneca. From process & manufacturing engineering to logistics, 
-                  skilled trades and even automation, we've got a deep bench of auto-minded professionals to keep 
-                  your project rolling.
-                </p>
-                <Link 
-                  href="/services/automotive"
-                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105"
-                  aria-label="Get started with Automotive engineering services"
-                >
-                  GET STARTED
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-
-            {/* Energy/Utility Staffing Section */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-              <div className="space-y-6 lg:space-y-8">
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Energy/Utility Staffing</h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Far from being a sedate line of business, almost no sector is evolving as quickly as energy and utility. 
-                  Seneca is moving with it, deploying teams of specialist electrical engineers, PMs, technicians 
-                  and more to where they're needed most. We're fluent in legacy dynamics while staying abreast of 
-                  the latest twists and turns of this dynamic space.
-                </p>
-                <Link 
-                  href="/services/energy-utility"
-                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105"
-                  aria-label="Get started with Energy/Utility staffing services"
-                >
-                  GET STARTED
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-              
-              <div className="relative">
-                <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                  <Image
-                    src="/images/it8.png"
-                    alt="Energy utility engineers reviewing blueprints at construction site with industrial background"
-                    width={600}
-                    height={400}
-                    className="w-full h-auto object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Engineering Specialties Section */}
         <section className="py-12 lg:py-20 bg-gradient-to-r from-[#c5f82a] to-[#00d9a6]">
@@ -686,87 +599,11 @@ const SenecaServicesPage = () => {
 
         {/* Government Services Section */}
        
-          <section className="bg-white py-8 sm:py-12 lg:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-4xl mx-auto">
-              <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mb-6">
-                When working with the government and their agencies, Seneca Resources assures that all 
-                employees are fully compliant with state and federal regulations, including{' '}
-                <Link 
-                  href="/section-508-compliance" 
-                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
-                  aria-label="Learn more about Section 508 compliance"
-                >
-                  Section 508 of the Rehabilitation Act
-                </Link>
-                {' '}which requires Federal agencies to make their electronic and information 
-                technology accessible to people with disabilities.
-              </p>
-            </div>
-          </div>
-        </section>
+          
 
        
         {/* Services Grid */}
-        <section className="py-12 sm:py-16 lg:py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="space-y-16 sm:space-y-20 lg:space-y-24">
-              {services.map((service, index) => (
-                <article 
-                  key={service.id}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center ${
-                    service.reverse ? 'lg:grid-flow-col-dense' : ''
-                  }`}
-                >
-                  {/* Image Container */}
-                  <div className={`relative ${service.reverse ? 'lg:col-start-2' : ''}`}>
-                    <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
-                      <Image
-                        src={service.image}
-                        alt={service.alt}
-                        fill
-                        className="object-cover transition-transform duration-700 hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
-                        priority={index < 2}
-                        quality={85}
-                      />
-                    </div>
-                  </div>
-
-                  {/* Content Container */}
-                  <div className={`${service.reverse ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                    <div className="  p-6 sm:p-8 lg:p-10 h-full flex flex-col justify-center">
-                      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
-                        {service.title}
-                      </h2>
-                      <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed mb-6 sm:mb-8">
-                        {service.description}
-                      </p>
-                      <div className="mt-auto">
-                        <Link
-                          href={`/services/${service.id}`}
-                          className="inline-flex items-center bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-500/50"
-                          aria-label={`Learn more about ${service.title} services`}
-                        >
-                          GET STARTED
-                          <svg 
-                            className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                          >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
+       
 
        
       </main>

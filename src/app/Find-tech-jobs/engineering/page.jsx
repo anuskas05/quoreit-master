@@ -273,49 +273,48 @@ const SenecaServicesPage = () => {
     </div>
   </div>
 </section>
-
-        {/* Information Technology Recruiting Section */}
-        <section className="py-12 lg:py-20 bg-white">
+  <section className="py-12 lg:py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
             <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent mb-6">
-                Information Technology Recruiting
-              </h2>
-              <p className="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                Between shifting technologies on one side and ever-evolving threats on the other, 
-                organizations are stretched by today's business climate. Today's IT recruiting needs 
-                require expertise across all of IT, from web and data security to cybersec. That's why 
-                we've become the trusted IT recruitment agency for top CIOs nationwide.
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent mb-6 lg:mb-8">
+                Engineering Recruitment Services
+              </h1>
+              <p className="text-lg lg:text-xl text-gray-700 max-w-5xl mx-auto leading-relaxed">
+                Maintaining high level performance in your operations takes a certain kind of talent - the right 
+                talent. From contract labor to outsourced solutions, Seneca Resources brings the experience to 
+                support a broad range of activities across the spectrum of engineering skill sets.
               </p>
             </div>
 
-            {/* DevOps Section */}
+            {/* Automotive Section */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
               <div className="relative order-2 lg:order-1">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <Image
-                    src="/images/it2.png"
-                    alt="DevOps team collaboration in modern tech environment"
+                    src="/images/it7.png"
+                    alt="Automotive engineer working with robotic manufacturing equipment in modern factory"
                     width={600}
-                    height={400}
+                    height={450}
                     className="w-full h-auto object-cover"
-                    loading="lazy"
+                    priority
+                    loading="eager"
                   />
                 </div>
               </div>
               
               <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
-                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">DevOps</h3>
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Automotive</h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  With a DevOps culture well-versed in Agile, as well as the latest advancements in software and 
-                  security, we supercharge tech teams through deep collaboration, and continually enhance IT systems 
-                  and applications. That means maximum efficiency as we design, develop, deploy and operate mission 
-                  critical IT systems.
+                  Recruiting for automotive can be challenging - especially when it comes to rework. Luckily no one 
+                  knows the automotive space like Seneca. From process & manufacturing engineering to logistics, 
+                  skilled trades and even automation, we've got a deep bench of auto-minded professionals to keep 
+                  your project rolling.
                 </p>
                 <Link 
-                  href="/services/devops"
-                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                  aria-label="Get started with DevOps services"
+                  href="/services/automotive"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105"
+                  aria-label="Get started with Automotive engineering services"
                 >
                   GET STARTED
                   <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -324,26 +323,21 @@ const SenecaServicesPage = () => {
                 </Link>
               </div>
             </div>
-          </div>
-        </section>
 
-        {/* Cybersecurity & Cloud Sections */}
-        <section className="py-12 lg:py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 lg:space-y-24">
-            {/* Cybersecurity */}
+            {/* Energy/Utility Staffing Section */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
               <div className="space-y-6 lg:space-y-8">
-                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">Cybersecurity</h3>
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Energy/Utility Staffing</h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Risk assessments. Security architecture. Intrusion detection. Network monitoring. In today's security 
-                  environment you need to be protected in every direction. Seneca delivers, providing the expertise 
-                  you need to safeguard your data and prevent, detect, and respond to cyber threats quickly and 
-                  effectively.
+                  Far from being a sedate line of business, almost no sector is evolving as quickly as energy and utility. 
+                  Seneca is moving with it, deploying teams of specialist electrical engineers, PMs, technicians 
+                  and more to where they're needed most. We're fluent in legacy dynamics while staying abreast of 
+                  the latest twists and turns of this dynamic space.
                 </p>
                 <Link 
-                  href="/services/cybersecurity"
-                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                  aria-label="Get started with Cybersecurity services"
+                  href="/services/energy-utility"
+                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transform hover:scale-105"
+                  aria-label="Get started with Energy/Utility staffing services"
                 >
                   GET STARTED
                   <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -355,132 +349,34 @@ const SenecaServicesPage = () => {
               <div className="relative">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <Image
-                    src="/images/it3.png"
-                    alt="Cybersecurity professionals monitoring network security"
+                    src="/images/it8.png"
+                    alt="Energy utility engineers reviewing blueprints at construction site with industrial background"
                     width={600}
                     height={400}
                     className="w-full h-auto object-cover"
                     loading="lazy"
                   />
                 </div>
-              </div>
-            </div>
-
-            {/* Cloud */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-              <div className="relative order-2 lg:order-1">
-                <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                  <Image
-                    src="/images/it4.png"
-                    alt="Cloud infrastructure engineers working in data center"
-                    width={600}
-                    height={400}
-                    className="w-full h-auto object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              
-              <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
-                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">Cloud</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  It seems Cloud infrastructures and data migrations get more complex by the day. On prem or off? 
-                  What about edge? What platform is best? Our engineers will help you make the most of AI, 
-                  storage, compute, supercomputing, or networking to enhance your multi-generational IT estate. If 
-                  your needs require building, moving or storing data in the Cloud, we've got your back.
-                </p>
-                <Link 
-                  href="/services/cloud"
-                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                  aria-label="Get started with Cloud services"
-                >
-                  GET STARTED
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               </div>
             </div>
           </div>
         </section>
-
-        {/* Enterprise & Infrastructure Sections */}
-        <section className="py-12 lg:py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 lg:space-y-24">
-            {/* Enterprise Resource Planning */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-              <div className="space-y-6 lg:space-y-8">
-                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                  Enterprise Resource Planning
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  The backbone of integrated business processes, ERP software enables organization to share data 
-                  across departments. Implemented well, it's like turbo fuel for your bottom line. We specialize in the 
-                  development, customization and implementation of SAP, Oracle, Microsoft, and Salesforce software 
-                  based in the cloud or locally.
-                </p>
+        <section className="bg-white py-8 sm:py-12 lg:py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-4xl mx-auto">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mb-6">
+                When working with the government and their agencies, Seneca Resources assures that all 
+                employees are fully compliant with state and federal regulations, including{' '}
                 <Link 
-                  href="/services/erp"
-                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                  aria-label="Get started with ERP services"
+                  href="/section-508-compliance" 
+                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
+                  aria-label="Learn more about Section 508 compliance"
                 >
-                  GET STARTED
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  Section 508 of the Rehabilitation Act
                 </Link>
-              </div>
-              
-              <div className="relative">
-                <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                  <Image
-                    src="/images/it5.png"
-                    alt="ERP specialists implementing enterprise solutions"
-                    width={600}
-                    height={400}
-                    className="w-full h-auto object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Infrastructure Engineering */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-              <div className="relative order-2 lg:order-1">
-                <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                  <Image
-                    src="/images/it6.png"
-                    alt="Infrastructure engineer monitoring network systems"
-                    width={600}
-                    height={400}
-                    className="w-full h-auto object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              
-              <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
-                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                  Infrastructure Engineering
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Infrastructure keeps your business running. So downtime is not an option. Our infrastructure 
-                  engineers are there 24/7, providing everything from desktop and server support to network 
-                  engineering. Whether you need a single skilled resource or a full team of engineers, Seneca 
-                  Resources can deploy proven resources at a moment's notice.
-                </p>
-                <Link 
-                  href="/services/infrastructure"
-                  className="inline-flex items-center px-8 py-4 bg-green-300 hover:bg-gradient-to-br from-[#c5f82a] to-[#00d9a6]  text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                  aria-label="Get started with Infrastructure Engineering services"
-                >
-                  GET STARTED
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
+                {' '}which requires Federal agencies to make their electronic and information 
+                technology accessible to people with disabilities.
+              </p>
             </div>
           </div>
         </section>
@@ -599,23 +495,7 @@ const SenecaServicesPage = () => {
         {/* Government Services Section */}
       
 
-        {/* Consulting Services Header */}
-        <section className="bg-gradient-to-r from-[#c5f82a] to-[#00d9a6] py-12 sm:py-16 lg:py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 sm:mb-8">
-              Consulting Services
-            </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed mb-8">
-              Understanding how a skill fits into a larger mechanism is the mark of a true expert. Our 
-              recruitment specialists understand the bigger picture, and help our clients do the same. With 
-              decades of combined experience across all phases of strategic planning, Seneca Consulting 
-              Services can help you see the road ahead.
-            </p>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
-              Expertise in the key areas driving business today.
-            </h2>
-          </div>
-        </section>
+       
 
         {/* Services Grid */}
         
